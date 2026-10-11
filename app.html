@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Explore · Campus Corners</title>
+<meta name="description" content="Every UCLA campus event on one map, day by day.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600&display=swap">
+<link rel="stylesheet" href="app/app.css">
+<link rel="stylesheet" href="css/app-shell.css">
+</head>
+<body class="app-page">
+<!-- Built by tools/build_app.py from the app repo. Don't edit this file by hand. -->
+<main>
+      <div class="app" id="app">
+        <a class="homebtn homebtn--float" href="./" aria-label="Campus Corners home"><img src="img/logo.svg" alt=""></a>
+        <div class="top" id="top">
+          <div class="toprow">
+            <a class="homebtn homebtn--row" href="./" aria-label="Campus Corners home"><img src="img/logo.svg" alt=""></a>
+            <div class="modes" role="group" aria-label="Map mode">
+              <button id="mEvents" aria-pressed="true">Events</button>
+              <button id="mExplore" aria-pressed="false">Explore</button>
+            </div>
+            <button class="scanbtn" id="scanBtn" aria-label="Scan a sticker"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2"/><path d="M12 8.2l1.2 2.4 2.6.4-1.9 1.8.5 2.6-2.4-1.3-2.4 1.3.5-2.6-1.9-1.8 2.6-.4z"/></svg></button>
+          </div>
+          <div id="evHead">
+            <div class="dhead"><span class="m" id="month"></span><button class="today" id="today">Today</button></div>
+            <div class="week" id="week" role="group" aria-label="Choose a day" style="margin-top:8px"></div>
+            <button class="recbtn" id="recBtn" aria-expanded="false" aria-controls="recs">✦ Recommended this week <span class="car">▾</span></button>
+          </div>
+          <div class="expl-head" id="exHead" hidden><b>4 campus corners</b> inspired our products. Tap a star.</div>
+        </div>
+        <div class="main">
+          <div class="mapwrap" id="mapwrap">
+            <svg id="map" viewBox="500 280 620 760" preserveAspectRatio="xMidYMid meet" role="img" aria-label="UCLA campus map"></svg>
+            <div class="zoom" role="group" aria-label="Map zoom"><button id="zIn" aria-label="Zoom in">+</button><button id="zOut" aria-label="Zoom out">−</button><button id="zFit" aria-label="Show whole campus" style="font-size:15px">⤢</button></div>
+            <div class="credit" id="credit">Map: UCLA · pinch or scroll to zoom</div>
+            <div class="sparko" id="sparko">
+              <img id="sparkoImg" src="app/sparko.webp" alt="Sparko, your campus guide" tabindex="0">
+              <div class="bubble" id="bubble" role="status" hidden></div>
+            </div>
+          </div>
+          <div class="panel" id="list" hidden></div>
+            <div class="floatbar" id="floatbar">
+              <button class="pill" id="offPill"></button>
+              <div class="seg" id="viewSeg" role="group" aria-label="View"><button id="vMap" aria-pressed="true">Map</button><button id="vList" aria-pressed="false">List</button></div>
+            </div>
+
+          <div class="panel" id="mine" hidden></div>
+          <div class="panel" id="settings" hidden></div>
+          <div class="recs" id="recs" hidden></div>
+          <div class="sheet" id="sheet" hidden role="dialog" aria-modal="false" aria-labelledby="sheetTitle"></div>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Category filters"></div>
+        <div class="scan" id="scan" hidden></div>
+        <div class="celebrate" id="celebrate" hidden></div>
+        <div class="splash" id="splash" role="dialog" aria-modal="true" aria-label="Welcome" hidden></div>
+        <nav class="tabs" aria-label="Main">
+          <button id="tMap" aria-current="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg>Map</button>
+          <button id="tMine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>My Events</button>
+          <button id="tSet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>Settings</button>
+        </nav>
+      </div>
+</main>
+<noscript><p style="padding:24px;font:16px system-ui">The campus map needs JavaScript. <a href="./">Back to Campus Corners</a></p></noscript>
+<script src="app/app.js"></script>
+</body>
+</html>

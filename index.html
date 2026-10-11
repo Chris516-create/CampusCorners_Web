@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campus Corners</title>
+<meta name="description" content="See what's on at UCLA today, right on the map.">
+<meta property="og:title" content="Campus Corners">
+<meta property="og:description" content="See what's on at UCLA today, right on the map.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Sans:wght@400;500&family=Outfit:wght@500;600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<main class="home-page" id="home">
+<div class="sky" aria-hidden="true">
+  <div class="sky-light sky-light--pink"></div>
+  <div class="sky-light sky-light--peach"></div>
+  <div class="sky-light sky-light--sun"></div>
+</div>
+<header class="site-header site-header--home">
+  <a class="header-brand" href="./" aria-label="Campus Corners home">
+    <img src="img/logo.svg" alt="">
+    <span>Campus Corners</span>
+  </a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="app.html">Explore</a>
+    <a href="about.html">About</a>
+    <a href="stickers.html">Stickers</a>
+  </nav>
+  <a class="header-action" href="app.html">Open the map</a>
+</header>
+
+  <section class="home-hero" aria-labelledby="home-title">
+    <div class="hero-wordmark">
+      <div class="glass-wordmark">
+        <svg viewBox="0 0 800 170" role="img" aria-label="Campus Corners">
+          <defs>
+            <linearGradient id="wordmarkGlass" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity=".74"/>
+              <stop offset=".3" stop-color="#FFEAF0" stop-opacity=".34"/>
+              <stop offset=".72" stop-color="#FFC9D6" stop-opacity=".22"/>
+              <stop offset="1" stop-color="#B96779" stop-opacity=".42"/>
+            </linearGradient>
+          </defs>
+          <text class="wordmark-rim" x="400" y="120" text-anchor="middle">Campus Corners</text>
+          <text class="wordmark-fill" x="400" y="120" text-anchor="middle">Campus Corners</text>
+          <text class="wordmark-highlight" x="400" y="117" text-anchor="middle">Campus Corners</text>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-copy">
+      <h1 id="home-title">Explore your campus</h1>
+      <p>See what's on at UCLA today, right on the map.</p>
+    </div>
+    <div class="action-wrap">
+      <img class="action-sparko" src="img/sparko.webp" width="900" height="648" alt="Sparko, a round gray squirrel with pink star eyes, peeking over the map button">
+      <a class="glass-action" href="app.html">
+        <span class="action-label">
+          <span>Today on campus</span>
+          <strong id="today-label">Open the map</strong>
+        </span>
+        <span class="action-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12H19M14 7L19 12L14 17"/></svg></span>
+      </a>
+    </div>
+  </section>
+</main>
+<script src="js/site.js"></script>
+</body>
+</html>
