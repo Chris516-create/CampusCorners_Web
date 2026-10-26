@@ -7,7 +7,7 @@
   --body:"DM Sans",ui-sans-serif,system-ui,-apple-system,sans-serif;
   color-scheme:light;
 }
-html,body.app-page{height:100%;margin:0;padding:0;overflow:hidden;background:#E3E3E6;overscroll-behavior:none}
+html,body.app-page{height:100%;margin:0;padding:0;overflow:hidden;background:#FFFFFF;overscroll-behavior:none}
 body.app-page main{position:fixed;inset:0}
 .app{position:absolute;inset:0;border-radius:0;
   padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -26,11 +26,11 @@ body.app-page main{position:fixed;inset:0}
 
   .top,.filters,.tabs{position:absolute;z-index:9;left:50%;transform:translateX(-50%);
     border:1px solid rgba(255,255,255,.72);background:rgba(255,255,255,.66);
-    box-shadow:0 20px 60px rgba(60,50,50,.14),inset 0 1px 0 rgba(255,255,255,.78);
+    box-shadow:0 20px 60px rgba(101,57,49,.14),inset 0 1px 0 rgba(255,255,255,.78);
     -webkit-backdrop-filter:blur(24px) saturate(1.15);backdrop-filter:blur(24px) saturate(1.15)}
   .top{top:20px;width:min(600px,calc(100% - 420px));min-width:440px;border-radius:26px;padding:14px 16px 12px}
   .filters{bottom:100px;max-width:calc(100% - 48px);border-radius:999px;padding:8px}
-  .tabs{bottom:20px;width:min(440px,calc(100% - 48px));border-radius:25px;padding:4px;overflow:hidden}
+  .tabs{bottom:20px;border-radius:25px;padding:4px;overflow:hidden}
   .tabs button{padding:9px 0 8px;border-radius:20px}
   .tabs button[aria-current="true"]{background:rgba(255,255,255,.6)}
   .top .modes,.top .day,.top .scanbtn,.top .homebtn--row{background:rgba(255,255,255,.7)}
@@ -38,7 +38,7 @@ body.app-page main{position:fixed;inset:0}
 
   .homebtn--row{display:none}
   .homebtn--float,.top[hidden]~.homebtn--float{display:grid;top:20px;left:20px;right:auto;width:58px;height:58px;z-index:9;
-    border:1px solid rgba(255,255,255,.72);background:rgba(255,255,255,.66);box-shadow:0 20px 60px rgba(60,50,50,.14);
+    border:1px solid rgba(255,255,255,.72);background:rgba(255,255,255,.66);box-shadow:0 20px 60px rgba(101,57,49,.14);
     -webkit-backdrop-filter:blur(24px) saturate(1.15);backdrop-filter:blur(24px) saturate(1.15)}
   .homebtn--float img{width:34px;height:34px}
 
@@ -51,13 +51,15 @@ body.app-page main{position:fixed;inset:0}
 
   /* event details: a card at the side instead of a bottom sheet */
   .sheet{z-index:12;left:20px;right:auto;bottom:20px;width:400px;max-height:calc(100% - 120px);border-radius:24px;
-    padding:18px 20px 18px;box-shadow:0 20px 60px rgba(40,30,30,.22)}
+    padding:18px 20px 18px;box-shadow:0 20px 60px rgba(101,57,49,.22)}
   .sheet .grab{display:none}
   .recs{z-index:10;top:206px;left:50%;right:auto;transform:translateX(-50%);width:min(600px,calc(100% - 420px));min-width:440px;max-height:calc(100% - 420px)}
 
   /* list, My Events, Settings: one readable column */
   .panel{padding:36px max(24px,calc(50% - 300px)) 210px}
   #list{padding-top:190px}
+  #shuffle{padding:36px max(24px,calc(50% - 230px)) 96px}
+  .tabs{width:min(520px,calc(100% - 48px))}
   .panel h3{font-size:26px;margin-bottom:14px}
   .scan{padding:24px max(0px,calc(50% - 300px)) 40px}
   .splash{padding:72px 24px 40px}

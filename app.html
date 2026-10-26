@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="css/app-shell.css">
 </head>
 <body class="app-page">
-<!-- Built by tools/build_app.py from the app repo. Don't edit this file by hand. -->
+<!-- Since Oct 25, 2026 the app is edited in this repo (app.html, app/). See README. -->
 <main>
       <div class="app" id="app">
         <a class="homebtn homebtn--float" href="./" aria-label="Campus Corners home"><img src="img/logo.svg" alt=""></a>
@@ -49,6 +49,7 @@
               <div class="seg" id="viewSeg" role="group" aria-label="View"><button id="vMap" aria-pressed="true">Map</button><button id="vList" aria-pressed="false">List</button></div>
             </div>
 
+          <div class="panel" id="shuffle" hidden></div>
           <div class="panel" id="mine" hidden></div>
           <div class="panel" id="settings" hidden></div>
           <div class="recs" id="recs" hidden></div>
@@ -60,6 +61,7 @@
         <div class="splash" id="splash" role="dialog" aria-modal="true" aria-label="Welcome" hidden></div>
         <nav class="tabs" aria-label="Main">
           <button id="tMap" aria-current="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg>Map</button>
+          <button id="tShuf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="7" y="4" width="11" height="15" rx="2.5" transform="rotate(8 12.5 11.5)"/><path d="M5.2 7.2 4 16.6a2.5 2.5 0 0 0 2.2 2.8l4.3.5"/></svg>Shuffle</button>
           <button id="tMine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>My Events</button>
           <button id="tSet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>Settings</button>
         </nav>

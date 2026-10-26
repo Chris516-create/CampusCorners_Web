@@ -13,6 +13,8 @@ If the app's code has changed in a way this script does not expect, it stops wit
 message instead of producing a half-working page.
 """
 import json
+import sys as _sys
+_sys.exit("Since Oct 25, 2026 the app is edited directly in this repo (app.html, app/). This script would overwrite it with the old prototype, so it is retired. See README.")
 import shutil
 import sys
 from pathlib import Path

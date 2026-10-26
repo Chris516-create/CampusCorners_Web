@@ -11,26 +11,17 @@ The website for [campus-corners.com](https://campus-corners.com). Plain HTML, CS
 
 The look (sunset sky, glass panels, Outfit and DM Sans) comes from the Figma Make file "Four-Page Campus Website". Shared styles are in `css/site.css`.
 
-## The app comes from the app repo
+## Where the app is edited
 
-The app is developed in [Campus-Corners](https://github.com/Chris516-create/Campus-Corners) (`prototype/`). This repo holds a copy, made by a script, so the app is only edited in one place.
+Since Oct 25, 2026 the app (`app.html`, `app/app.js`, `app/app.css`) is edited **in this repo**. It has moved well past the old prototype in the Campus-Corners repo (Shuffle, clubs, reviews, orange Explore, Sparko's route guide), so `tools/build_app.py` no longer applies and stops with a note if you run it.
 
-**Do not edit `app.html` or anything in `app/` by hand.** After the app or its events change, update the copy:
+The Campus-Corners repo still holds the data and the tools that feed the site:
 
-```
-python3 tools/build_app.py ../Campus-Corners
-```
+- events: `data/events/` (built each week from the UCLA calendar and `data/scripts/fetch_instagram_week.py`)
+- clubs: `data/clubs/ucla-clubs.json`, restrooms and study spots: `data/explore/spots.json`
+- maps: `tools/recolor_line.py` (pink and orange line maps), `tools/footprints.py` (building outlines), `tools/walkgrid.py` (walkable grid for the route guide)
 
-Then commit the changed files. The script stops with a message if the app's code changed in a way it does not expect.
-
-What the script changes for the website (everything else is the app as is):
-
-- "Today" is the real date, and the app opens on it. The opening poster and the recommendations only show events that have not passed.
-- Saved events, collected stickers and settings are remembered in the visitor's browser.
-- A round logo button leads back to the home page.
-- `css/app-shell.css` controls how the app sits in the page: full screen on phones, floating glass panels over the map on wide screens.
-
-Event rules (source link required, never guess a location, no Instagram scraping) are in the app repo's README and apply here unchanged, because the events are copied from there.
+Visitors' saved events, follows, reviews and added spots are kept in their own browser for now.
 
 ## To do before going public
 
