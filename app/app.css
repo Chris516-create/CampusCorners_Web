@@ -447,3 +447,34 @@ section p{margin:0 0 8px;max-width:65ch}
 .xcard .xinfo{padding-right:40px}
 .askind label{gap:6px}
 .gmhero{position:relative}.gmhero img.gmstk{position:absolute;inset:8% 0;margin:auto;height:84%;width:84%;max-width:none;object-fit:contain}
+
+/* Shuffle on short phone screens (in-app browsers with toolbars): text always fits, the picture shrinks */
+.poster.spot .sface{flex:1 1 42%;min-height:72px}
+.poster.spot .pbody{flex:0 0 auto;overflow:visible;padding-bottom:4px}
+.poster.spot .pdesc{-webkit-line-clamp:3}
+.poster.spot .pfoot{margin-top:auto}
+.poster:not(.spot) .pbody{flex:1 1 auto}
+@media (max-height:720px){
+  #shuffle{gap:6px;padding-top:8px}
+  .shsub{display:none}
+  .shact .no,.shact .yes{width:52px;height:52px;font-size:21px}
+  .shact .undo{width:40px;height:40px}
+  .poster.spot h4{font-size:20px}
+  .poster.spot .pbody{padding-top:10px;gap:5px}
+  .poster.spot .psrc{display:none}
+  .pface{padding:12px 14px 14px;gap:8px}
+  .pface h4{font-size:21px;-webkit-line-clamp:3}
+  .pdate b{font-size:22px}
+  .poster.hasimg .pface h4{font-size:16px}
+}
+@media (max-height:600px){.poster.spot .pdesc{-webkit-line-clamp:2}.poster.spot dl{display:none}}
+@media (max-width:899px){
+  .app:has(.sheet:not([hidden])) .filters{display:none}
+  .sheet{max-height:92%}
+}
+@media (max-width:899px) and (max-height:720px){
+  .gmhero{height:118px}
+  .gmhead{padding-top:8px}.gmhead h3{font-size:19px}
+  .gmacts{padding:6px 0 8px}.gmact{min-height:50px}.gmact span{width:34px;height:34px}
+  .top{padding:10px 12px 8px;gap:7px}.day{min-height:46px;padding:3px 0 4px}.recbtn{margin-top:4px;min-height:28px}
+}
