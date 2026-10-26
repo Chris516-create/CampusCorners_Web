@@ -91,8 +91,8 @@ function avatar(c,size){if(c&&c.a)return `<img class="ava" src="app/clubs/${esc(
 const XSRC={"chris":{"t":"Campus Corners team pick","u":null},"db17":{"t":"Daily Bruin, Jan 2017","u":"https://dailybruin.com/2017/01/10/the-quad-where-to-go-no-2-on-campus"},"db16":{"t":"Daily Bruin, Jan 2016","u":"https://dailybruin.com/2016/01/13/the-quad-uclas-best-bathrooms-for-any-situation"},"bl23":{"t":"BruinLife, Dec 2023","u":"https://bruinlife.com/?p=36562"},"asucla":{"t":"ASUCLA, Top Five Study Spaces","u":"https://www.asucla.ucla.edu/ucla/top-five-study-spaces-at-ucla"},"db24":{"t":"Daily Bruin, Nov 2024","u":"https://dailybruin.com/2024/11/25/students-share-their-notes-on-ucla-study-spots-pros-and-cons"},"blstudy":{"t":"BruinLife study spots guide","u":"https://bruinlife.com/?p=38569"}};
 const XSPOTS=[{"id":"r-ackerman3","kind":"restroom","p":"ackerman","title":"Ackerman Union, 3rd floor","where":"Ackerman Union, 3rd floor","blurb":"Lots of stalls for privacy, and it is reliably clean and stocked.","src":["chris","db17"]},{"id":"r-luskin","kind":"restroom","p":"publicaffairs","title":"Luskin School (Public Affairs Building)","where":"Public Affairs Building, floors 1–3","blurb":"Bright lights, big mirrors and roomy stalls. The 3rd floor is the quietest.","src":["chris","bl23","db17"]},{"id":"r-engr6","kind":"restroom","p":"engr6","title":"Engineering VI","where":"Engineering VI","blurb":"One of the newest buildings in South Campus.","src":["chris"]},{"id":"r-anderson","kind":"restroom","p":"anderson","title":"Anderson School, Entrepreneurs Hall","where":"Anderson School of Management, Entrepreneurs Hall, 2nd floor","blurb":"Full-length stalls and good lighting, up in North Campus.","src":["chris","bl23"]},{"id":"r-kaplan3","kind":"restroom","p":"kaplan","title":"Kaplan Hall, 3rd floor","where":"Kaplan Hall, 3rd floor","blurb":"Very private, with a separate toilet room and a full-length mirror. The lighting is a little dim.","src":["bl23"]},{"id":"r-dodd","kind":"restroom","p":"dodd","title":"Dodd Hall, basement","where":"Dodd Hall, basement","blurb":"The most private pick on BruinLife's list, with wide stalls and flattering light. A bit out of the way.","src":["bl23"]},{"id":"r-franz","kind":"restroom","p":"franz","title":"Franz Hall, 6th–7th floors","where":"Franz Hall, 6th and 7th floors","blurb":"The upper floors are usually empty, clean and well stocked.","src":["db17"]},{"id":"r-kerckhoff4","kind":"restroom","p":"kerckhoff","title":"Kerckhoff Hall, 4th floor","where":"Kerckhoff Hall, 4th floor","blurb":"Quiet and well kept.","src":["db17"]},{"id":"r-yrl1","kind":"restroom","p":"yrl","title":"Young Research Library, 1st floor","where":"Charles E. Young Research Library, 1st floor","blurb":"Single-occupancy rooms in a tucked-away corner.","src":["db17"]},{"id":"r-carnesale","kind":"restroom","p":"carnesale","title":"Carnesale Commons","where":"Carnesale Commons, any floor","blurb":"Good mirror lighting, nice decor and low traffic, up on the Hill.","src":["bl23"]},{"id":"r-kaufman2","kind":"restroom","p":"kaufman","title":"Glorya Kaufman Hall, 2nd floor","where":"Glorya Kaufman Hall, 2nd floor","blurb":"Marble floors and natural light from big windows.","src":["db16"]},{"id":"s-rosenfeld","kind":"study","p":"rosenfeld","title":"Rosenfeld Management Library","where":"Anderson School of Management","blurb":"A quiet library with a café close by.","src":["chris","asucla"]},{"id":"s-music","kind":"study","p":"music","title":"Music Library","where":"Schoenberg Music Building","blurb":"A smaller library tucked into the music building; students mention it as a go-to.","src":["chris","db24"]},{"id":"s-powell","kind":"study","p":"powell","title":"Powell Library","where":"Powell Library, main reading room and Night Powell","blurb":"Quiet tables and cubicles near food and restrooms. Night Powell has group rooms for 5–8 people.","src":["db24","blstudy"]},{"id":"s-yrl","kind":"study","p":"yrl","title":"Young Research Library","where":"Charles E. Young Research Library","blurb":"Big tables, reliable outlets and Café 451. Silent reading room on the 1st floor, quiet single desks upstairs.","src":["db24","blstudy"]},{"id":"s-thestudy","kind":"study","p":"hedrick","title":"The Study at Hedrick","where":"The Study, Hedrick Hall","blurb":"Food and drinks allowed, a fireplace, bookable private rooms, and the Blue Room with its starry ceiling.","src":["blstudy"]},{"id":"s-sculpture","kind":"study","p":"sculpture","title":"Murphy Sculpture Garden","where":"Franklin D. Murphy Sculpture Garden","blurb":"Sun, grass and a change of scenery from the libraries.","src":["asucla"]}];
 const KIND={sparko:{name:"Sparko spots",one:"Sparko spot",c:"#E8661F",bg:"#FFE1CC",grad:"linear-gradient(135deg,#FFD2B8,#FFB6C1)"},
-  restroom:{name:"Restrooms",one:"Restroom",c:"#F29B2E",bg:"#FFEDCC",grad:"linear-gradient(135deg,#FFE9B8,#FFC28F)",icon:"wc"},
-  study:{name:"Study spots",one:"Study spot",c:"#C4531A",bg:"#FFDDCB",grad:"linear-gradient(135deg,#FFD9C7,#F6A982)",icon:"book"}};
+  restroom:{name:"Restrooms",one:"Restroom",c:"#F29B2E",bg:"#FFEDCC",grad:"linear-gradient(135deg,#FFE9B8,#FFC28F)",icon:"wc",img:"app/sparko-restroom.webp",pin:"app/sparko-restroom-pin.webp",alt:"Sparko on a toilet"},
+  study:{name:"Study spots",one:"Study spot",c:"#C4531A",bg:"#FFDDCB",grad:"linear-gradient(135deg,#FFD9C7,#F6A982)",icon:"book",img:"app/sparko-study.webp",pin:"app/sparko-study-pin.webp",alt:"Sparko reading a book"}};
 const allSpots=()=>[...SPOTS.map(x=>({id:x.id,kind:"sparko",p:x.p,title:x.title,where:PLACES[x.p].n,blurb:x.story.split("\n")[0],sparko:x})),...XSPOTS,...S.mySpots.map(x=>({...x,mine:true}))];
 const spotById=id=>allSpots().find(x=>x.id===id);
 const visibleSpots=()=>allSpots().filter(x=>S.exF==="all"||(S.exF==="mine"?x.mine:x.kind===S.exF));
@@ -152,8 +152,8 @@ function drawPins(){
       el("ellipse",{cx:0,cy:17,rx:9,ry:3.5,fill:p.color,opacity:.25},g);
       el("path",{d:"M0 16 C-4 8 -13 4 -13 -4 A13 13 0 1 1 13 -4 C13 4 4 8 0 16Z",fill:p.color,stroke:"#fff","stroke-width":2.2},g);
       if(p.unsure)el("path",{d:"M0 16 C-4 8 -13 4 -13 -4 A13 13 0 1 1 13 -4 C13 4 4 8 0 16Z",fill:"none",stroke:"#fff","stroke-width":2.2,"stroke-dasharray":"3 4","stroke-linecap":"round",transform:"scale(1.18) translate(0 -.6)"},g);
-      if(p.icon==="wc"){const t=el("text",{x:0,y:-0.5,"text-anchor":"middle","font-size":9.5,"font-weight":800,fill:"#fff","font-family":"DM Sans,system-ui,sans-serif"},g);t.textContent="WC"}
-      else if(p.icon==="book")el("path",{d:"M-7 -9 L-1 -7.5 L-1 3 L-7 1.5Z M1 -7.5 L7 -9 L7 1.5 L1 3Z",fill:"#fff"},g);
+      if(p.img){g.querySelectorAll("path").forEach(n=>n.remove());el("path",{d:"M-6 8 L0 18 L6 8Z",fill:"#fff",stroke:p.color,"stroke-width":2,"stroke-linejoin":"round"},g);
+        el("circle",{cx:0,cy:-6,r:17,fill:"#fff",stroke:p.color,"stroke-width":2.5},g);el("image",{href:p.img,x:-15,y:-21,width:30,height:30},g)}
       else el("use",{href:"#ccg",x:-8.5,y:-12.5,width:17,height:17,color:"#fff"},g);
       if(p.mine){el("circle",{cx:11,cy:-15,r:6.5,fill:"#1F1A17",stroke:"#fff","stroke-width":1.5},g);const m=el("text",{x:11,y:-12.3,"text-anchor":"middle","font-size":8,fill:"#fff","font-weight":700},g);m.textContent="★"}
     }
@@ -196,7 +196,7 @@ function render(){
   if(ex){const by={};visibleSpots().filter(x=>x.p&&PLACES[x.p]).forEach(x=>{(by[x.p]=by[x.p]||[]).push(x)});
     Object.entries(by).forEach(([k,arr])=>arr.forEach((x,i)=>{const p=PLACES[k],dx=(i-(arr.length-1)/2)*30;
       if(x.kind==="sparko"){const st=STICKERS.find(q=>q.spot===x.id);pin({x:p.x,y:p.y,dx,star:true,got:S.stickers.has(st.id),label:`${x.title}, Sparko spot${S.stickers.has(st.id)?", sticker collected":""}`,onClick:()=>openX(x)})}
-      else pin({x:p.x,y:p.y,dx,color:KIND[x.kind].c,icon:KIND[x.kind].icon,mine:x.mine,label:`${x.title}, ${KIND[x.kind].one}`,onClick:()=>openX(x)})}));
+      else pin({x:p.x,y:p.y,dx:(i-(arr.length-1)/2)*36,color:KIND[x.kind].c,img:KIND[x.kind].pin,mine:x.mine,label:`${x.title}, ${KIND[x.kind].one}`,onClick:()=>openX(x)})}));
     renderExHead()}
   else{
     const on=dayEvents(S.day).filter(e=>e.p);const by={};on.forEach(e=>{(by[e.p]=by[e.p]||[]).push(e)});
@@ -266,7 +266,7 @@ function renderPanels(){
       `<button class="addbtn" id="addEv">+ Add events</button>`+
       (went.length?`<div class="msect">Went<span>Rate and review what you went to</span></div>`+went.map(e=>mrow(e,true)).join(""):"")+
       `<div class="msect x">To explore<span>Corners, restrooms and study spots you saved</span></div>`+
-      (xs.length?`<div class="xcards">`+xs.map(x=>{const K=KIND[x.kind],rv=S.reviews[x.id];return `<div class="xcard" style="background:${K.grad}">
+      (xs.length?`<div class="xcards">`+xs.map(x=>{const K=KIND[x.kind],rv=S.reviews[x.id];return `<div class="xcard" style="background:${K.grad}">${K.img?`<img class="xcimg" src="${K.pin}" alt="">`:""}
         <button class="xinfo" data-id="${x.id}"><small>${K.one}${x.mine?" · yours":""}</small><b>${esc(x.title)}</b><span>${esc(x.where||"")}</span></button>
         <div class="xrow">${rv?`<button class="rate has" data-x="${x.id}">${stars(rv.r)}</button>`:`<button class="rate" data-x="${x.id}">Rate</button>`}
         <button class="rm" data-x="${x.id}" aria-label="Remove ${esc(x.title)} from To explore">✕</button></div></div>`}).join("")+`</div>`
@@ -330,7 +330,7 @@ function posterCard(e,top){const c=CATS[e.cat],d=dayDate(e.days.find(x=>x>=FROM)
 function spotCard(x,top){const K=KIND[x.kind],ti=top?"":'tabindex="-1"',st=x.kind==="sparko"&&STICKERS.find(k=>k.spot===x.id),src=(x.src||[]).map(k=>XSRC[k]).filter(Boolean);
   return `<article class="poster spot ${top?"ptop":"punder"}" data-id="${x.id}" style="--pc:${K.bg};--po:${K.c};--grad:${K.grad}" ${top?`tabindex="0" role="group" aria-label="${esc(x.title)}, ${K.one}. Right arrow adds to To explore, left arrow passes."`:'aria-hidden="true"'}>
   <span class="stamp yes">Explore</span><span class="stamp no">Pass</span>
-  <div class="sface">${st?`<img src="${STK+st.img}" alt="" draggable="false">`:`<span class="sicon">${x.kind==="restroom"?"WC":x.kind==="study"?"📖":""}</span>`}</div>
+  <div class="sface">${st?`<img src="${STK+st.img}" alt="" draggable="false">`:`<img src="${KIND[x.kind].img}" alt="${KIND[x.kind].alt}" draggable="false">`}</div>
   <div class="pbody"><span class="pcat">${K.one}${x.mine?" · added by you":""}</span><h4>${esc(x.title)}</h4><dl><dt>Where</dt><dd>${esc(x.where||"")}</dd></dl><p class="pdesc">${esc(x.blurb||"")}</p>
     ${src.length?`<p class="psrc">From ${src.map(q=>esc(q.t)).join(" · ")}</p>`:""}</div>
   <div class="pfoot"><span></span>${x.p?`<button class="pmap" ${ti}>On the map</button>`:""}<button class="pmore" ${ti}>Details</button></div></article>`}
@@ -466,7 +466,7 @@ function openReview(id,title,sub,pre){const R=$("review"),old=S.reviews[id];let 
 /* ---------- Explore: filter chips, spot sheets, add your own ---------- */
 function renderExHead(){const H=$("exHead"),n=k=>allSpots().filter(x=>k==="all"||(k==="mine"?x.mine:x.kind===k)).length;
   const chip=(k,label)=>`<button class="xchip" data-k="${k}" aria-pressed="${S.exF===k}">${label}<span>${n(k)}</span></button>`;
-  H.innerHTML=`<div class="xchips" role="group" aria-label="What to show">${chip("all","All")}${chip("sparko","★ Sparko spots")}${chip("restroom","WC Restrooms")}${chip("study","📖 Study spots")}${S.mySpots.length?chip("mine","Yours"):""}</div>
+  H.innerHTML=`<div class="xchips" role="group" aria-label="What to show">${chip("all","All")}${chip("sparko","★ Sparko spots")}${chip("restroom",`<img class="xci" src="${KIND.restroom.pin}" alt="">Restrooms`)}${chip("study",`<img class="xci" src="${KIND.study.pin}" alt="">Study spots`)}${S.mySpots.length?chip("mine","Yours"):""}</div>
     <button class="xadd" id="xAdd">+ Add a spot</button>`;
   H.querySelectorAll(".xchip").forEach(b=>b.onclick=()=>{S.exF=b.dataset.k;closeSheet();render();fitExplore()});$("xAdd").onclick=openAddSpot}
 function fitExplore(){const pts=visibleSpots().filter(x=>x.p&&PLACES[x.p]).map(x=>PLACES[x.p]);if(!pts.length){centerOn(800,540,600);return}
@@ -481,7 +481,7 @@ function openAddSpot(){closeSheet();const A=$("addspot");let r=0,kind="restroom"
   A.innerHTML=`<div class="scanhead"><h3 id="asT">Add a spot</h3><button id="asX" aria-label="Close">✕</button></div>
   <form class="asform" id="asForm">
     <fieldset class="askind"><legend>What is it?</legend>
-      <label><input type="radio" name="k" value="restroom" checked> Restroom</label><label><input type="radio" name="k" value="study"> Study spot</label></fieldset>
+      <label><input type="radio" name="k" value="restroom" checked><img class="xci" src="${KIND.restroom.pin}" alt=""> Restroom</label><label><input type="radio" name="k" value="study"><img class="xci" src="${KIND.study.pin}" alt=""> Study spot</label></fieldset>
     <label>Name<input id="asName" required maxlength="80" placeholder="e.g. Boelter 8th floor restroom"></label>
     <label>Building<select id="asP"><option value="">Not on the map</option>${opts.map(([k,v])=>`<option value="${k}">${esc(v.n)}</option>`).join("")}</select></label>
     <label>Floor or details<input id="asWhere" maxlength="80" placeholder="e.g. 3rd floor, left of the elevators"></label>
@@ -553,7 +553,7 @@ function openEvent(e){const c=CATS[e.cat],place=e.p?PLACES[e.p].n:e.placeText,we
 function openX(x){if(!x)return;const K=KIND[x.kind],on=S.toExp.has(x.id),place=x.p?PLACES[x.p].n:null;
   const st=x.kind==="sparko"&&STICKERS.find(k=>k.spot===x.id);
   gmSheet({id:x.id,title:x.title,again:()=>openX(spotById(x.id)),
-    hero:st?`<img class="gmstk" src="${STK+st.img}" alt="${esc(x.sparko.prod)}: Sparko at this spot">`:`<span class="gmicon">${x.kind==="restroom"?"WC":"📖"}</span>`,
+    hero:st?`<img class="gmstk" src="${STK+st.img}" alt="${esc(x.sparko.prod)}: Sparko at this spot">`:`<img class="gmstk" src="${KIND[x.kind].img}" alt="${KIND[x.kind].alt}">`,
     heroBg:K.grad,xp:true,label:`<span class="gmcat xk">${K.one}${x.mine?" · added by you":""}</span>`,sub:esc(x.where||""),
     actions:[{icon:on?"★":"☆",label:on?"Saved":"To explore",on,fn:()=>{on?S.toExp.delete(x.id):S.toExp.add(x.id);render();openX(x)}},
       ...(place?[{icon:"➜",label:"Directions",href:DIRURL(place+", UCLA, Los Angeles")}]:[]),
@@ -618,7 +618,7 @@ function drawRoute(){cancelAnimationFrame(routeAnim);const bar=$("routebar");con
 const TIPS={
   events:()=>{const n=dayEvents(S.day).filter(e=>e.p).length;return n?[`${n} ${n===1?"event":"events"} on the map ${S.day===TODAY?"today":"this day"}. Tap a pin to peek.`,null]:["Quiet day here. Want to check tomorrow?",["Next day",()=>{S.day=Math.min(NDAYS-1,S.day+1);render()}]]},
   saved:()=>["Saved. You'll find it in My Events.",["Open My Events",()=>{S.tab="mine";S.mineSeg="saved";closeSheet();render()}]],
-  explore:()=>["Stars are Sparko corners. WC pins are good restrooms, book pins are study spots. Add your own with + Add a spot.",null]
+  explore:()=>["Stars are Sparko corners. Sparko on a toilet means a good restroom, Sparko reading means a study spot.",null]
 };
 function tip(key,force){
   if(!S.tips||(!force&&(S.tipsOff>=2||S.shownTips.has(key))))return;

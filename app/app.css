@@ -439,3 +439,11 @@ section p{margin:0 0 8px;max-width:65ch}
 .routebar button{flex:none;width:36px;height:36px;border-radius:50%;border:0;background:var(--g1);cursor:pointer;font-size:14px;align-self:flex-start}
 .gmact span svg{display:block}
 @media (min-width:900px){.routebar{left:20px;right:auto;top:96px;width:360px}}
+/* Sparko restroom / study stickers */
+.xci{width:22px;height:22px;object-fit:contain;flex:none;display:block}
+.poster.spot .sface img{max-height:92%;max-width:80%}
+.xcard{position:relative}
+.xcimg{position:absolute;right:6px;top:6px;width:40px;height:40px;object-fit:contain;pointer-events:none}
+.xcard .xinfo{padding-right:40px}
+.askind label{gap:6px}
+.gmhero{position:relative}.gmhero img.gmstk{position:absolute;inset:8% 0;margin:auto;height:84%;width:84%;max-width:none;object-fit:contain}
