@@ -19,8 +19,8 @@ What it does:
   2. copies the file to events/<week>/<same name>.json
   3. resizes the posters those events use into app/posters/
   4. refreshes the club list and profile pictures used by club search (with --clubs/--avatars)
-  5. rebuilds the events inside app/app.js from every file in events/<week>/ (plus the rest of
-     last week, if the site is updated before Monday) and sets the dates the app shows
+  5. rebuilds the events inside app/app.js from every file in events/<week>/ and sets the app to
+     show exactly that week, Monday to Sunday (the site always shows the coming week only)
 Needs Python 3. Uses Pillow to resize images if installed, otherwise macOS `sips`.
 """
 import argparse, datetime as dt, json, re, shutil, subprocess, sys
@@ -167,8 +167,7 @@ def main():
                      "a": c["instagram"] + ".jpg" if c["instagram"] + ".jpg" in have else None} for c in clubs]
 
     # 5: rebuild the app's events
-    today = dt.date.today()
-    base = min(today, week) if today >= week - dt.timedelta(days=7) else week
+    base = week  # the app always shows the coming week, Monday to Sunday
     end = week + dt.timedelta(days=7)
     raw, seen = [], set()
     for folder in sorted(EVENTS_DIR.glob("*/")):
