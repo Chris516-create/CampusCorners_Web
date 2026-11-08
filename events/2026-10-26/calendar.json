@@ -1,0 +1,949 @@
+[
+  {
+    "id": "ucla-4dac4085",
+    "title": "GSRC Drop-in Hours: UC Immigrant Legal Services",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "timeStatus": "confirmed",
+    "placeId": "sac",
+    "placeText": "Graduate Student Resource Center (SAC B11)",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "Graduate Student Resource Center",
+    "description": "Talk with an attorney about UC Immigrant Legal Services. For graduate and professional students.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/4dac4085-603e-428d-98f9-21c910076dfc"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-d8181be3",
+    "title": "Money Matters Monday: Crypto Simulator",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "11:00",
+    "endTime": "15:00",
+    "timeStatus": "confirmed",
+    "placeId": "careercenter",
+    "placeText": "Strathmore 106",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "Financial Wellness",
+    "description": "Drop in for games, worksheets, prizes and a money expert.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/d8181be3-b17c-40bf-ae85-8eced044a624"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-1f97f163",
+    "title": "Using Sociolinguistics to Address AI Fairness (Zion Mengesha)",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "13:30",
+    "endTime": "15:30",
+    "timeStatus": "confirmed",
+    "placeId": "murphy",
+    "placeText": "DataX, 3312 Murphy Hall",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "DataX",
+    "description": "How speech recognition and language models misread African American English, with three case studies. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/1f97f163-e375-47c1-b72e-1558255e23e0"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-13dad9e6",
+    "title": "BRC Midterms Study Jam",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "14:00",
+    "endTime": "17:00",
+    "timeStatus": "confirmed",
+    "placeId": "sac",
+    "placeText": "Student Activities Center, Conference Rooms 1–3",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "Bruin Resource Center (Collegiate Recovery Program, Undocumented Student Program)",
+    "description": "Supervised study session with a free meal. RSVP required.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/13dad9e6-b201-4a6a-bc01-15f40125bf6a"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [
+      "Listed twice on the calendar (\"BRC Midterms Study Jam\" and \"BRC Study Jam\") with the same time and rooms."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-93d2dddf",
+    "title": "The Paradox of Pointless Suffering (Scott Samuelson)",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "16:00",
+    "endTime": "17:15",
+    "timeStatus": "confirmed",
+    "placeId": "royce",
+    "placeText": "Royce Hall 306",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Center for the Study of Religion",
+    "description": "Philosophy talk on accepting and opposing suffering, co-sponsored by the Center for Buddhist Studies. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/93d2dddf-9e53-48a9-acfd-9efbe99ce7ea"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [
+      "The calendar also has a second listing of this talk marked CANCELED (event 090f633e). This listing is not canceled; check the page before going."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-15280c9d",
+    "title": "Undergraduate Financial Drop-Ins",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "09:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "wellness",
+    "host": "Financial Wellness",
+    "description": "Quick general money questions; longer topics need a coaching appointment. Also Wed 1–4 PM, Thu 11 AM–4 PM and Fri 9 AM–3 PM.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/15280c9d-2e72-4d95-acdd-d00832853a4d"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-b12bbcbd",
+    "title": "Student Legal Services: Immigration Drop-In",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "10:00",
+    "endTime": "12:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "wellness",
+    "host": "Student Legal Services, Dashew Center",
+    "description": "Free drop-in consultation with an immigration attorney for registered UCLA students. No RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/b12bbcbd-ac39-47a2-82c0-511b5a123837"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [
+      "Listed twice (Student Legal Services and Dashew Center) for the same session."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-781f95ad",
+    "title": "J-1 Academic Training Workshop",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom (registration link)",
+    "locationStatus": "online",
+    "category": "career",
+    "host": "Dashew Center for International Students and Scholars",
+    "description": "Eligibility, application process and deadlines for J-1 academic training. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/781f95ad-c2e3-4e37-8e29-e4d19c7b47ce"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-dc724895",
+    "title": "GSRC Drop-In Hours: Student Legal Services",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "15:00",
+    "endTime": "16:30",
+    "timeStatus": "confirmed",
+    "placeId": "sac",
+    "placeText": "Graduate Student Resource Center (SAC B11)",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "Student Legal Services, Graduate Student Resource Center",
+    "description": "Help with housing, legal problems, employment and contracts. Open to all graduate students.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/dc724895-36bc-4353-90d8-806fd641c7ca"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-e3fef921",
+    "title": "Stacks Xchange: \"Splitting Interfaces\" (Hyunseo Cho)",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "15:30",
+    "endTime": "17:00",
+    "timeStatus": "confirmed",
+    "placeId": "murphy",
+    "placeText": "DataX, 3312 Murphy Hall",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "DataX",
+    "description": "Graduate student talk on splitting media software interfaces with AI. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/e3fef921-86e1-4b6c-bad0-86cb98adbcc5"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-f4af07b7",
+    "title": "Inaugural Richard Yarborough Lecture in Black Literature",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "kerckhoff",
+    "placeText": "Kerckhoff Grand Salon",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Institute of American Cultures",
+    "description": "Richard Yarborough and Valerie Smith in conversation, moderated by Robin D. G. Kelley. Reception at 6, program at 7.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/f4af07b7-9f5d-4ae6-ad5d-9947366b7337"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-1a16f8f6",
+    "title": "Fall CPT Webinar (F-1 students)",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "career",
+    "host": "Dashew Center for International Students and Scholars",
+    "description": "Weekly webinar on off-campus work authorization (CPT).",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/1a16f8f6-9bb9-44c0-be9a-1c1740ea0807"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-b64a8cfb",
+    "title": "FITWELL Talks: Nutrition & Lifestyle for Breast Cancer Risk Reduction",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "12:00",
+    "endTime": "12:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom (registration link)",
+    "locationStatus": "online",
+    "category": "wellness",
+    "host": "Recreation and Wellbeing",
+    "description": "Eve Lahijani on diet, activity and habits that may affect breast cancer risk. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/b64a8cfb-b76d-421c-a93e-f574a3e9cce3"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-494feeb7",
+    "title": "Fall English Language Circle",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "12:00",
+    "endTime": "13:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "community",
+    "host": "Dashew Center for International Students and Scholars",
+    "description": "Conversation practice led by a native English speaker. Limited to 20.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/494feeb7-9263-4e7b-9a7e-866afc65b5f3"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-7fbb5aaa",
+    "title": "Lunch with CAPS",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "12:00",
+    "endTime": "13:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "wellness",
+    "host": "Bruin Resource Center, Undocumented Student Program",
+    "description": "Free lunch to meet Counseling and Psychological Services staff. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/7fbb5aaa-a1b8-4021-8544-4a3c01c9003a"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-c5d15b06",
+    "title": "Managing Your Scholarly Identity",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "academic",
+    "host": "UCLA Library",
+    "description": "ORCID, Google Scholar and choosing repositories for your research. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/c5d15b06-6517-42d7-882d-eb6d0014f54f"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-a20ac5dd",
+    "title": "Dawn Norfleet: Beyond Being Alice Coltrane and Betty Davis",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "13:00",
+    "endTime": "15:00",
+    "timeStatus": "confirmed",
+    "placeId": "music",
+    "placeText": "Green Room (1230 Schoenberg Music Building)",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "School of Music",
+    "description": "Nazir Ali Jairazbhoy Colloquium on the careers of Alice Coltrane and Betty Davis.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/a20ac5dd-fb03-52ea-9d2a-a95e11303bac",
+      "https://schoolofmusic.ucla.edu/events/"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-037dd970",
+    "title": "CAAC Winter Enrollment Workshop",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "16:30",
+    "endTime": "17:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom (registration link)",
+    "locationStatus": "online",
+    "category": "academic",
+    "host": "Center for Academic Advising in the College",
+    "description": "Help choosing winter courses and planning the two-pass enrollment. Also Thu 10/29, 4–5 PM.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/037dd970-4c24-445c-ab94-198b7392580f"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-1c8232f4",
+    "title": "CARE Fall Quarter Certificate Training",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "wooden",
+    "placeText": "CAPS Large Conference Room (CAPS, John Wooden Center West)",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "CARE Program",
+    "description": "Three-session sexual violence prevention certificate, Wednesdays in weeks 5–7. RSVP was due Oct 23.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/1c8232f4-e61c-49ea-85ff-aced4c5c72c2"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-89743a2d",
+    "title": "Creative Wellness",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "covel",
+    "placeText": "Sunset Plaza Stage",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "Residential Life",
+    "description": "Arts-focused wellness night for undergraduates.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/89743a2d-2e57-4bb2-ad86-16dd01dc3c57"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-b5f2601f",
+    "title": "Chef Marcus Samuelsson in Conversation",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "19:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "hammer",
+    "placeText": "Hammer Museum",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Hammer Museum",
+    "description": "Ancestral ingredients and food, then a signing of \"Back to Green\".",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/b5f2601f-005f-48f1-b3be-646c0639b646"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-38f3db92",
+    "title": "Faculty Artist Series: The Theoreticals Return",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "20:00",
+    "endTime": "22:00",
+    "timeStatus": "confirmed",
+    "placeId": "music",
+    "placeText": "Schoenberg Hall",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "School of Music",
+    "description": "New works by UCLA music theory faculty.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/38f3db92-3b9e-51e4-9285-3bf96de4f12e",
+      "https://schoolofmusic.ucla.edu/events/"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-cf338307",
+    "title": "UCLA Rec Halloween Walk: Treasure Your Health",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "11:00",
+    "endTime": "14:00",
+    "timeStatus": "confirmed",
+    "placeId": "wooden",
+    "placeText": "Around campus; ends at the John Wooden Center",
+    "locationStatus": "multiple",
+    "category": "wellness",
+    "host": "Recreation and Wellbeing",
+    "description": "Walk campus in costume, collect stamps, and pick up a t-shirt at the John Wooden Center. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/cf338307-8fe9-4979-ae48-aff08a33a6d1"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-914322d2",
+    "title": "Botany Brown Bag with Dr. Rachel Shahan",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "12:00",
+    "endTime": "13:00",
+    "timeStatus": "confirmed",
+    "placeId": "botany",
+    "placeText": "La Kretz Garden Pavilion, 707 Tiverton Dr",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Mathias Botanical Garden",
+    "description": "Studying plant root development with single-cell genomics. Free and open to the public. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/914322d2-d82e-4475-b15d-a08f7fc4562c"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-18cf6047",
+    "title": "Intro to Searching for Patents",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "academic",
+    "host": "UCLA Library",
+    "description": "What patents are and how to find them, with Shelby Hallman. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/18cf6047-9996-4141-8f1c-6f10480b5143"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-85d9ffea",
+    "title": "Career Advising Drop-In (transfer students)",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "13:30",
+    "endTime": "15:30",
+    "timeStatus": "confirmed",
+    "placeId": "kerckhoff",
+    "placeText": "Transfer Student Center, Kerckhoff Hall 128",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Transfer Student Center, UCLA Career Center",
+    "description": "Fifteen-minute one-on-one career advice for transfer students.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/85d9ffea-3a83-4edd-96e9-e8695270ca60"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-1fad476b",
+    "title": "Work Visas and Permanent Residence in the U.S.",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "career",
+    "host": "Dashew Center for International Students and Scholars",
+    "description": "WR Immigration on employment-based visas and green cards. RSVP required.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/1fad476b-6f67-423f-b72e-8ba9ad737274"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-46fd753d",
+    "title": "Writing a Literature Review",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "16:00",
+    "endTime": "17:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "academic",
+    "host": "UCLA Library",
+    "description": "Organizing your research into a literature review.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/46fd753d-3c5a-4825-9a67-4ac496395c5f"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-4f5ba182",
+    "title": "Writing the Personal Statement",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "17:30",
+    "endTime": "18:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "academic",
+    "host": "Graduate Writing Center",
+    "description": "Strategies for fellowship, residency and PhD personal statements. Bring a draft if you have one. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/4f5ba182-e34a-4d1d-8ab4-783b13747f1f"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-b82ec5a1",
+    "title": "David L. Abell Piano Master Series: Elizabeth Schumann",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "19:00",
+    "endTime": "21:00",
+    "timeStatus": "confirmed",
+    "placeId": "music",
+    "placeText": "Lani Hall (Schoenberg Music Building)",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "School of Music",
+    "description": "Piano recital in the 2026/27 master series.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/b82ec5a1-d81e-539d-98b9-b1332c94175d",
+      "https://schoolofmusic.ucla.edu/events/"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-cc06b79e",
+    "title": "Contenders Night 1: Coyote vs Acme",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "19:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "hammer",
+    "placeText": "Hammer Museum",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Hammer Museum",
+    "description": "Screening, then a conversation with the director, a voice actor and the producer.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/cc06b79e-5b7a-436f-94ea-92b7741f1b3b"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-dfbc0a07",
+    "title": "UCLA Philharmonia: The \"Don Quixote\" Experience",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "20:00",
+    "endTime": "22:00",
+    "timeStatus": "confirmed",
+    "placeId": "music",
+    "placeText": "Schoenberg Hall",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "School of Music",
+    "description": "Strauss's Don Quixote with a talk before the intermission and a reception after.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/dfbc0a07-39de-52ce-b6fe-766f4a916f4e",
+      "https://schoolofmusic.ucla.edu/events/"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-a4f96ceb",
+    "title": "Mindful Writing Session",
+    "dates": [
+      "2026-10-30"
+    ],
+    "startTime": "10:00",
+    "endTime": "12:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "academic",
+    "host": "Graduate Writing Center",
+    "description": "Mindfulness-based writing time; bring a current project. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/a4f96ceb-c200-4e8a-a71a-2afed73eebea"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-5371d805",
+    "title": "QTBIPOC Space: Culture Through Coasters",
+    "dates": [
+      "2026-10-30"
+    ],
+    "startTime": "13:30",
+    "endTime": "14:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "arts",
+    "host": "LGBTQ Campus Resource Center",
+    "description": "Paint ceramic coasters inspired by folk art and Día de los Muertos. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/5371d805-d8fc-4f98-b78d-28ffefb582bf"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-67b2c9e6",
+    "title": "Nightmare on CRC Street",
+    "dates": [
+      "2026-10-30"
+    ],
+    "startTime": "16:00",
+    "endTime": "17:30",
+    "timeStatus": "confirmed",
+    "placeId": "sac",
+    "placeText": "LGBTQ Campus Resource Center (Student Activities Center)",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "LGBTQ Campus Resource Center",
+    "description": "DIY paper pumpkins and a murder mystery game. Limited to 20; RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/67b2c9e6-d3dd-4263-b326-ff576d96f732"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-21de0b33",
+    "title": "UCLA Wind Ensemble: American Anthems",
+    "dates": [
+      "2026-10-30"
+    ],
+    "startTime": "20:00",
+    "endTime": "21:30",
+    "timeStatus": "confirmed",
+    "placeId": "music",
+    "placeText": "Schoenberg Hall",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "School of Music",
+    "description": "Season opener of American works, including pieces for the nation's 250th.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/21de0b33-8ed8-5318-8f21-01494d7ea245",
+      "https://schoolofmusic.ucla.edu/events/"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-074977ef",
+    "title": "Men's Rugby vs LMU",
+    "dates": [
+      "2026-10-31"
+    ],
+    "startTime": "11:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "stadium",
+    "placeText": "Wallis Annenberg Stadium",
+    "locationStatus": "confirmed",
+    "category": "sports",
+    "host": "Rugby Club Sports",
+    "description": "2nd XV match.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/074977ef-58b3-54d9-b55d-2511dc849c21"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-52e01386",
+    "title": "Men's Rugby vs Southern Nazarene University",
+    "dates": [
+      "2026-10-31"
+    ],
+    "startTime": "13:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "stadium",
+    "placeText": "Wallis Annenberg Stadium",
+    "locationStatus": "confirmed",
+    "category": "sports",
+    "host": "Rugby Club Sports",
+    "description": "NCR XVs Premier League match.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/52e01386-f981-5acd-9de8-548e26fbdd77"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ucla-a9d0e84d",
+    "title": "La Llorona / Pulse",
+    "dates": [
+      "2026-10-31"
+    ],
+    "startTime": "19:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "hammer",
+    "placeText": "Billy Wilder Theater, Hammer Museum",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "UCLA Library, Film & Television Archive",
+    "description": "\"The Trouble With Ghosts\" double bill, introduced in person by Kriss Ravetto-Biagioli and Martine Beugnet.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/a9d0e84d-9ea0-460e-8bac-ce29a5296a2d"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  }
+]
