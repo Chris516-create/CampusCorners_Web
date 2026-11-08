@@ -1,0 +1,647 @@
+[
+  {
+    "id": "ig-aca-workshop-miyazaki",
+    "title": "ACA All Day Fall Workshop: Ai Miyazaki",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "19:30",
+    "endTime": "21:00",
+    "timeStatus": "confirmed",
+    "placeId": "lot4",
+    "placeText": "Parking Structure 4 (Lot 4), level P1",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "ACA All Day (@acaallday)",
+    "description": "Free open dance workshop with alum Ai Miyazaki (waacking, jazz funk, hip hop). Check-in at 7:20 PM; sign up with the link in their bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De5xjSkvPIm/",
+      "https://www.instagram.com/reel/De7tK3yS1t5/"
+    ],
+    "sourceName": "Instagram @acaallday (Graph API)",
+    "poster": "18062162300629633.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-asme-speedfriending",
+    "title": "ASME Speed Friending",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "engr6",
+    "placeText": "Engineering VI, Cohen Room",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "ASME at UCLA (@asmebruins)",
+    "description": "Rotate through quick, low-pressure chats and meet new people. RSVP with the QR code on the poster.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Der_BZqvjqj/"
+    ],
+    "sourceName": "Instagram @asmebruins (Graph API)",
+    "poster": "18640394743041250.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-soles-cdmsmith",
+    "title": "SOLES Career Fair Workshop with CDM Smith",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "18:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Location TBD",
+    "locationStatus": "tbd",
+    "category": "career",
+    "host": "SOLES, UCLA's SHPE chapter (@uclasoles)",
+    "description": "CDM Smith engineers and recruiters on getting ready for career fairs and making an impression.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De0ZcMisSUS/"
+    ],
+    "sourceName": "Instagram @uclasoles (Graph API)",
+    "poster": "18117611357282278.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "The post says \"Location TBD\"."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-nsbe-gm",
+    "title": "NSBE General Meeting",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": "boelter",
+    "placeText": "Boelter Hall Penthouse (8500)",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "National Society of Black Engineers (@uclansbe)",
+    "description": "NSBE's general meeting.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De8YhXoNUhR/"
+    ],
+    "sourceName": "Instagram @uclansbe (Graph API)",
+    "poster": "18100333337530005.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Poster spells it \"Boleter Penthouse\"; the room number 8500 comes from NSBE's Oct 9 post about the same penthouse."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-brea-rclco",
+    "title": "RCLCO Info Session (BREA)",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": "boelter",
+    "placeText": "Boelter Hall 5440",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Bruin Real Estate Association (@uclabrea)",
+    "description": "RCLCO, a real estate consulting and advisory firm, on its work and careers in commercial real estate. Register with the link in BREA's bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De2TuSmyVK-/"
+    ],
+    "sourceName": "Instagram @uclabrea (Graph API)",
+    "poster": "18130953766843635.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-bm-studysocial",
+    "title": "Bruin Marketers Study Social",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "rolfe",
+    "placeText": "Rolfe Hall 1308",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Bruin Marketers (@bruinmarketers)",
+    "description": "Midterm study session with other members and free snacks.",
+    "sourceUrls": [
+      "https://www.instagram.com/bruinmarketers/"
+    ],
+    "sourceName": "Instagram @bruinmarketers (Graph API)",
+    "poster": "17934141795409487.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "The poster spells it \"Rofle Hall\"."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-watt-soldering",
+    "title": "WATT Soldering Workshop: LED Keychains",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "boelter",
+    "placeText": "Upper Makerspace, Boelter 2808",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "IEEE WATT (@uclawatt)",
+    "description": "Learn to solder surface-mount parts and build matching LED keychains. No experience needed; RSVP at tinyurl.com/WATTCityWorkshopsRSVP.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De7lUmFS5Rb/"
+    ],
+    "sourceName": "Instagram @uclawatt (Graph API)",
+    "poster": "18141753793622203.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-bfs-rockyhorror",
+    "title": "BFS Screening: The Rocky Horror Picture Show",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "20:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "haines",
+    "placeText": "Haines Hall A18",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Bruin Film Society (@bruinfilmsociety)",
+    "description": "A spooky pre-Halloween screening at BFS's general meeting.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De7es6uTRUR/"
+    ],
+    "sourceName": "Instagram @bruinfilmsociety (Graph API)",
+    "poster": "18105619538247141.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-bfs-fundrager",
+    "title": "BFS Halloween Fundrager",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "22:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Address TBA",
+    "locationStatus": "tbd",
+    "category": "community",
+    "host": "Bruin Film Society (@bruinfilmsociety)",
+    "description": "Halloween fundraiser party. Presale $5 entry, $8 with 2 drinks, $11 unlimited; more at the door. Payment details in the post.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De46A6RBjIx/",
+      "https://www.instagram.com/p/DecoKtDyyOJ/"
+    ],
+    "sourceName": "Instagram @bruinfilmsociety (Graph API)",
+    "poster": "18139059523621069.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "The address has not been posted yet."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-spcn-tinikling",
+    "title": "SPCN Tinikling Auditions",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "timeStatus": "confirmed",
+    "placeId": "wilson",
+    "placeText": "Wilson Plaza",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Samahang Pilipino Cultural Night (@uclaspcn)",
+    "description": "Try out for the tinikling suite in SPCN's 50th show, the national dance of the Philippines. A second audition day is Nov 4.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Der6TPJGThE/"
+    ],
+    "sourceName": "Instagram @uclaspcn (Graph API)",
+    "poster": "18106583120196487.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-asu-celebrity",
+    "title": "Celebrity Wannabe (ASU)",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "bruinplaza",
+    "placeText": "Bruin Plaza",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Afrikan Student Union (@blackbruins)",
+    "description": "Pick a celebrity and a song and bring your best performance, solo or with your crew. Grand prizes. Sign up with the form in the post.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DeaiXe5HRyv/"
+    ],
+    "sourceName": "Instagram @blackbruins (Graph API)",
+    "poster": "18637791589055945.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "The caption calls it auditions; the poster gives Oct 27, 6–8 PM at Bruin Plaza."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-asa-pieahye",
+    "title": "Pie a Hye (ASA)",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "11:00",
+    "endTime": "15:00",
+    "timeStatus": "confirmed",
+    "placeId": "bruinwalk",
+    "placeText": "Bruin Walk",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Armenian Students' Association (@ucla_asa)",
+    "description": "Pie a friend for $5 to raise money for City of Smile Armenia, with Alpha Gamma Alpha and Alpha Epsilon Omega.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De28hkzGo43/"
+    ],
+    "sourceName": "Instagram @ucla_asa (Graph API)",
+    "poster": "18228170155332419.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-bmes-cadcomp",
+    "title": "BMES Halloween CAD Competition",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "18:30",
+    "endTime": "20:30",
+    "timeStatus": "confirmed",
+    "placeId": "engr5",
+    "placeText": "Engineering V 4101",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Biomedical Engineering Society (@bmesucla)",
+    "description": "BMES Workshop's first CAD competition. Files are due at 5 PM that day; the winner picks the biggest bag of candy.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De7N0yQJqAW/"
+    ],
+    "sourceName": "Instagram @bmesucla (Graph API)",
+    "poster": "18125396614905995.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "The caption says \"EV 4101\", read here as Engineering V room 4101."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-nsu-gm5",
+    "title": "NSU 5th General Meeting + Big/Little Kickback",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": null,
+    "endTime": null,
+    "timeStatus": "tbd",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "community",
+    "host": "Nikkei Student Union (@ucla_nsu)",
+    "description": "From NSU's October calendar. Time and place are not posted yet.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DeoZtUxPjLQ/"
+    ],
+    "sourceName": "Instagram @ucla_nsu (Graph API)",
+    "poster": "18128430685700384.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Only the date is on the calendar; check NSU's stories for the time and room."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-tasa-halloween",
+    "title": "TASA Halloween Clubbing",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": null,
+    "endTime": null,
+    "timeStatus": "tbd",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "community",
+    "host": "Taiwanese American Student Association (@uclatasa)",
+    "description": "From TASA's fall events schedule. Details are not posted yet.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DeZ3mPUvqmQ/"
+    ],
+    "sourceName": "Instagram @uclatasa (Graph API)",
+    "poster": "17910151404307270.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Only the date is on the schedule."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-litclub-internships",
+    "title": "Pre-Law Litigation Club: Landing Legal Internships Panel",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": "kerckhoff",
+    "placeText": "Kerckhoff Hall State Rooms",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Pre-Law Litigation Club (@litigationclubucla)",
+    "description": "Four legal professionals on networking, cold emailing, interviews and standing out for legal internships.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De0TI0Rvtv_/"
+    ],
+    "sourceName": "Instagram @litigationclubucla (Graph API)",
+    "poster": "18637094614041575.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-activeminds-pumpkins",
+    "title": "Active Minds Pumpkin Painting",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": "janss",
+    "placeText": "Tongva Steps",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "Active Minds at UCLA (@activemindsucla)",
+    "description": "A fall de-stress break with pumpkin painting. All supplies provided.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DexA6VzpKOL/"
+    ],
+    "sourceName": "Instagram @activemindsucla (Graph API)",
+    "poster": "17913719598520286.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-compbio-classplanning",
+    "title": "CompBio Class Planning Workshop",
+    "dates": [
+      "2026-10-26"
+    ],
+    "startTime": "18:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "royce",
+    "placeText": "Royce Hall 164",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Computational Biologists' Society (@compbiobruins)",
+    "description": "Course structures, professor tips and what to first pass, with CaSB advisor Brian Flores. RSVP in their bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DesyPedtV--/"
+    ],
+    "sourceName": "Instagram @compbiobruins (Graph API)",
+    "poster": "17872992336639665.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-sps-study",
+    "title": "SPS Study Session with Free Coffee",
+    "dates": [
+      "2026-10-27"
+    ],
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": "pab",
+    "placeText": "Physics and Astronomy Building 4-330",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Society of Physics Students (@spsucla)",
+    "description": "Study together with free coffee, muffins and donuts.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De7kfiPSsr9/"
+    ],
+    "sourceName": "Instagram @spsucla (Graph API)",
+    "poster": "18127405948902867.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-aiche-berkeley",
+    "title": "UC Berkeley MBPE & PDP Info Session (AIChE)",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "14:30",
+    "endTime": "15:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Location to be announced",
+    "locationStatus": "tbd",
+    "category": "career",
+    "host": "AIChE at UCLA (@aicheatucla)",
+    "description": "UC Berkeley's Product Development and Master of Bioprocess Engineering programs, with free pizza. RSVP with the QR code.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DepPVQCx3qg/"
+    ],
+    "sourceName": "Instagram @aicheatucla (Graph API)",
+    "poster": "17911786362489108.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "The poster says the location will be announced."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-esn-chipotle",
+    "title": "ESN Chipotle Restaurant Night",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "17:00",
+    "endTime": "21:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Chipotle, 1077 Broxton Ave, Westwood",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "Environmental Student Network (@uclaesn)",
+    "description": "Order with code ZEFQXV9 online, or show the flyer in person, to support ESN's events.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dexod58mQvT/"
+    ],
+    "sourceName": "Instagram @uclaesn (Graph API)",
+    "poster": "18037640630657503.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-aiche-cdmsmith",
+    "title": "CDM Smith: Nailing the Interview & Engineering Projects Panel",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "boelter",
+    "placeText": "Boelter Hall Penthouse",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "AIChE at UCLA (@aicheatucla)",
+    "description": "Interview prep workshop, then CDM Smith engineers on their recent projects. RSVP with the QR code.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DepPlJ9R8FC/"
+    ],
+    "sourceName": "Instagram @aicheatucla (Graph API)",
+    "poster": "18139914745716338.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-aplsa-publicsector",
+    "title": "Public Sector Law Panel (APLSA x ASA)",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "18:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "publicaffairs",
+    "placeText": "Public Affairs Building 1337",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Armenian Pre-Law Student Association (@aplsa_ucla)",
+    "description": "A public defender, school district litigation counsel and other legal professionals on public sector careers.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Deuv_yXAYJ_/"
+    ],
+    "sourceName": "Instagram @aplsa_ucla (Graph API)",
+    "poster": "17970714066179283.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-bmrs-boba",
+    "title": "BMRS Sharetea Boba Social",
+    "dates": [
+      "2026-10-28"
+    ],
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Sharetea",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "Biomedical Research Society (@bmrs_ucla)",
+    "description": "Boba after BMRS's guest speaker panel. Use code BMRS at the kiosk.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DesxnqKmx0f/"
+    ],
+    "sourceName": "Instagram @bmrs_ucla (Graph API)",
+    "poster": "18185001223427963.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": true,
+    "lastCheckedAt": "2026-10-25"
+  },
+  {
+    "id": "ig-umsa-wavetable",
+    "title": "Wavetable Synthesis: a Prof Talk by Prof. Andrews (UMSA)",
+    "dates": [
+      "2026-10-29"
+    ],
+    "startTime": "18:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "mathsci",
+    "placeText": "Math Sciences 6627",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Undergraduate Mathematics Student Association (@umsaatucla)",
+    "description": "How sound is stored digitally, the sampling theorem and Fourier transforms, with live demos.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/De2GPlfGZaI/"
+    ],
+    "sourceName": "Instagram @umsaatucla (Graph API)",
+    "poster": "18106841231253648.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-10-25"
+  }
+]
