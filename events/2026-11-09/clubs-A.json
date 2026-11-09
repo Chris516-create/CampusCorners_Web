@@ -573,5 +573,157 @@
     "conflicts": [],
     "needsReview": false,
     "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-uclasoles-amazon",
+    "title": "Amazon Info Session (SOLES x NSBE)",
+    "dates": [
+      "2026-11-09"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "engr6",
+    "placeText": "Engineering VI (Mong Learning Center)",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "SOLES — UCLA SHPE Chapter (@uclasoles)",
+    "description": "Learn about Amazon internships and full-time roles and meet industry professionals. Hawaiian food catered.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfVn7h6PlFl/"
+    ],
+    "sourceName": "Instagram @uclasoles (Graph API)",
+    "poster": "18106318400370318.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-acmstudioucla-gamedesign",
+    "title": "ACM Studio Game Design Workshop #4",
+    "dates": [
+      "2026-11-09"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "mathsci",
+    "placeText": "Mathematical Sciences 6229",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Game Dev Studio (@acmstudio.ucla)",
+    "description": "Kicks off a collaborative Zelda-like Unity project: ScriptableObjects, scene management and GitHub best practices.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfd8DFTtxcj/"
+    ],
+    "sourceName": "Instagram @acmstudio.ucla (Graph API)",
+    "poster": "18251125492310455.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-figmaatucla-hellokitty",
+    "title": "Hello Kitty Craft & Clay Night",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "17:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": "yrl",
+    "placeText": "In front of Charles E. Young Research Library",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Figma @ UCLA (@figmaatucla)",
+    "description": "Clay sculpting, treats and giveaways with Figma at UCLA. RSVP on Luma (link in bio).",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfTRzGMg6tZ/"
+    ],
+    "sourceName": "Instagram @figmaatucla (Graph API)",
+    "poster": "17984676971902608.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-uclansbe-gbm4",
+    "title": "NSBE GBM #4: Day in the Life of an Engineer (SoCal Edison)",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": "boelter",
+    "placeText": "Boelter Hall penthouse",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "National Society of Black Engineers (@uclansbe)",
+    "description": "Southern California Edison engineers on their day-to-day work. Food provided.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfflo7rhZMn/"
+    ],
+    "sourceName": "Instagram @uclansbe (Graph API)",
+    "poster": "17936540304145165.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Poster says 'Boleter Penthouse'; read as Boelter Hall penthouse."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-uclaclaude-aijobs",
+    "title": "Using AI in Your Job Search",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "engr6",
+    "placeText": "Engineering VI, Mong Learning Center",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Claude Builder Club @ UCLA (@uclaclaude)",
+    "description": "Beginner-friendly workshop on using AI tools in the job search. Bring your laptop; RSVP in bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfTZen3uFd_/"
+    ],
+    "sourceName": "Instagram @uclaclaude (Graph API)",
+    "poster": "18026478263925368.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-acmstudioucla-gameshow",
+    "title": "ACM Studio Game Show",
+    "dates": [
+      "2026-11-12"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "dodd",
+    "placeText": "Dodd Hall 175",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Game Dev Studio (@acmstudio.ucla)",
+    "description": "Team video-game trivia with power-ups.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfd8KBINgx-/"
+    ],
+    "sourceName": "Instagram @acmstudio.ucla (Graph API)",
+    "poster": "18353656309255347.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
   }
 ]
