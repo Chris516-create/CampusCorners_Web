@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Campus Corners</title>
-<meta name="description" content="See what's on at UCLA today, right on the map.">
+<meta name="description" content="Discover UCLA events and campus corners.">
 <meta property="og:title" content="Campus Corners">
 <meta property="og:description" content="See what's on at UCLA today, right on the map.">
 <link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
@@ -30,11 +30,16 @@
     <span>Campus Corners</span>
   </a>
   <nav class="site-nav" aria-label="Main navigation">
-    <a href="app.html">Explore</a>
+    <a href="app.html?entry=explore#map">Explore</a>
     <a href="about.html">About</a>
     <a href="stickers.html">Stickers</a>
   </nav>
-  <a class="header-action" href="app.html">Open the map</a>
+  <div class="site-header-actions">
+    <a class="header-action" href="app.html?entry=explore#map">Explore the map</a>
+    <a class="header-account" id="siteAccount" href="app.html#account" aria-label="Checking your account">
+      <span class="site-account-pending" aria-hidden="true"></span>
+    </a>
+  </div>
 </header>
 
   <section class="home-hero" aria-labelledby="home-title">
@@ -57,20 +62,21 @@
     </div>
     <div class="hero-copy">
       <h1 id="home-title">Explore your campus</h1>
-      <p>See what's on at UCLA today, right on the map.</p>
+      <p>Discover UCLA events and campus corners.</p>
     </div>
     <div class="action-wrap">
       <img class="action-sparko" src="img/sparko.webp" width="900" height="648" alt="Sparko, a round gray squirrel with pink star eyes, peeking over the map button">
-      <a class="glass-action" href="app.html">
+      <a class="glass-action" href="app.html?entry=explore#map">
         <span class="action-label">
-          <span>Today on campus</span>
-          <strong id="today-label">Open the map</strong>
+          <span>Discover UCLA events and campus corners</span>
+          <strong>Explore the map</strong>
         </span>
         <span class="action-arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12H19M14 7L19 12L14 17"/></svg></span>
       </a>
     </div>
   </section>
 </main>
+<script src="app/account.js"></script>
 <script src="js/site.js"></script>
 </body>
 </html>

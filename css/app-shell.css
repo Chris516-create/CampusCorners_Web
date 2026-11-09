@@ -59,7 +59,9 @@ body.app-page main{position:fixed;inset:0}
   .panel{padding:36px max(24px,calc(50% - 300px)) 210px}
   #list{padding-top:190px}
   #shuffle{padding:36px max(24px,calc(50% - 230px)) 96px}
-  .tabs{width:min(520px,calc(100% - 48px))}
+  .tabs{width:min(520px,calc(100% - 48px));margin:0}
+  .cc-account-fab{right:20px;bottom:20px;width:58px;height:58px}
+  .cc-account-fab-avatar{width:46px;height:46px}
   .panel h3{font-size:26px;margin-bottom:14px}
   .scan{padding:24px max(0px,calc(50% - 300px)) 40px}
   .splash{padding:72px 24px 40px}

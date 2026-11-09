@@ -62,6 +62,24 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--deep-pink); out
   font-size: 14px; font-weight: 500; text-decoration: none; transition: transform 180ms ease, background 180ms ease;
 }
 .header-action:hover { background: var(--deep-pink); transform: translateY(-1px); }
+.site-header-actions { justify-self: end; display: flex; align-items: center; gap: 10px; }
+.site-header-actions .header-action { justify-self: auto; }
+.header-account {
+  min-height: 44px; padding: 7px 13px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  border: 1px solid rgba(31,26,23,.16); border-radius: 999px; background: rgba(255,255,255,.48); color: var(--ink);
+  font-size: 14px; font-weight: 600; text-decoration: none; box-shadow: 0 8px 22px rgba(101,57,49,.08); transition: background 180ms ease, transform 180ms ease;
+}
+.header-account:hover { background: rgba(255,255,255,.75); transform: translateY(-1px); }
+.header-account svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.site-account-pending { display: block; width: 18px; height: 18px; border: 2px solid rgba(31,26,23,.14); border-top-color: rgba(31,26,23,.5); border-radius: 50%; animation: site-account-spin .9s linear infinite; }
+.header-account.is-error { border-color: rgba(220,40,97,.3); color: var(--deep-pink); }
+.site-account-avatar { position: relative; width: 28px; height: 28px; flex: none; overflow: visible; border-radius: 50%; background: #f5eee9; }
+.site-account-avatar img { display: block; width: 100%; height: 100%; border-radius: inherit; object-fit: cover; }
+.site-account-avatar.is-ucla-verified { outline: 3px solid #2774AE; box-shadow: 0 0 0 5px #FFD100; }
+.site-account-star { position: absolute; right: -5px; bottom: -4px; display: grid; width: 13px; height: 13px; place-items: center; border: 1px solid #fff; border-radius: 50%; background: #FFD100; color: #2774AE; font-size: 8px; line-height: 1; }
+.site-account-name { max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.site-account-retry { font-size: 13px; }
+@keyframes site-account-spin { to { transform: rotate(360deg); } }
 
 .content-shell { position: relative; z-index: 1; width: min(1160px, calc(100% - 72px)); margin: 0 auto; }
 
@@ -177,18 +195,19 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--deep-pink); out
 }
 
 @media (max-width: 760px) {
-  .site-header { width: calc(100% - 32px); height: 76px; grid-template-columns: 1fr auto; }
+  .site-header { width: calc(100% - 32px); height: 100px; grid-template-columns: 1fr auto; grid-template-rows: 58px 42px; }
   .header-brand { font-size: 15px; gap: 9px; }
   .header-brand img { width: 30px; height: 30px; }
-  /* on phones the three links stay; the dark button would repeat "Explore" */
-  .site-nav { gap: 18px; }
+  .site-header-actions { grid-column: 2; grid-row: 1; gap: 7px; }
+  .site-header-actions .header-action { display: none; }
+  .site-nav { grid-column: 1 / -1; grid-row: 2; justify-self: center; align-self: center; gap: 18px; }
   .site-nav a { font-size: 13px; padding: 14px 0; }
   .site-nav a.is-active::after { bottom: 8px; }
-  .header-action { display: none; }
+  .header-account { min-height: 40px; padding: 6px 11px; font-size: 13px; }
   .content-shell, .site-footer { width: calc(100% - 32px); }
 
   .home-page { min-height: 520px; }
-  .home-hero { width: calc(100% - 24px); height: calc(100dvh - 76px); min-height: 444px; padding-bottom: 2vh; }
+  .home-hero { width: calc(100% - 24px); height: calc(100dvh - 100px); min-height: 420px; padding-bottom: 2vh; }
   .hero-wordmark { width: min(440px, 104vw); margin-bottom: -2px; }
   .glass-wordmark text { font-size: 118px; }
   .hero-copy h1 { font-size: clamp(45px, 13vw, 60px); }

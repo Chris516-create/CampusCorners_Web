@@ -13,7 +13,8 @@
 <meta name="theme-color" content="#F95685">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600&display=swap">
-<link rel="stylesheet" href="app/app.css">
+<link rel="stylesheet" href="app/app.css?v=3">
+<link rel="stylesheet" href="app/onboarding.css">
 <link rel="stylesheet" href="css/app-shell.css">
 </head>
 <body class="app-page">
@@ -32,6 +33,7 @@
           </div>
           <div id="evHead">
             <div class="dhead"><span class="m" id="month"></span><button class="today" id="today">Today</button></div>
+            <p class="event-week-context">Oct 26–Nov 1, 2026 · Past events</p>
             <div class="week" id="week" role="group" aria-label="Choose a day" style="margin-top:8px"></div>
             <button class="recbtn" id="recBtn" aria-expanded="false" aria-controls="recs">✦ Recommended this week <span class="car">▾</span></button>
           </div>
@@ -55,6 +57,7 @@
 
           <div class="panel" id="shuffle" hidden></div>
           <div class="panel" id="mine" hidden></div>
+          <div class="panel cc-account-panel" id="account" hidden></div>
           <div class="panel" id="settings" hidden></div>
           <div class="recs" id="recs" hidden></div>
           <div class="sheet" id="sheet" hidden role="dialog" aria-modal="false" aria-labelledby="sheetTitle"></div>
@@ -63,15 +66,23 @@
         <div class="scan" id="scan" hidden></div>
         <div class="celebrate" id="celebrate" hidden></div>
         <div class="splash" id="splash" role="dialog" aria-modal="true" aria-label="Welcome" hidden></div>
+        <div class="cc-modal-root" id="ccModalRoot" hidden></div>
+        <div class="cc-tour-layer" id="ccTourLayer" hidden aria-live="polite"><div class="cc-tour-card" id="ccTourCard"></div></div>
+        <div class="cc-action-status" id="ccActionStatus" role="status" aria-live="polite"></div>
         <nav class="tabs" aria-label="Main">
           <button id="tMap" aria-current="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg>Map</button>
           <button id="tShuf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="7" y="4" width="11" height="15" rx="2.5" transform="rotate(8 12.5 11.5)"/><path d="M5.2 7.2 4 16.6a2.5 2.5 0 0 0 2.2 2.8l4.3.5"/></svg>Shuffle</button>
-          <button id="tMine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>My Events</button>
+          <button id="tMine" data-tour="my-events"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>My Events</button>
           <button id="tSet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>Settings</button>
         </nav>
+        <button id="tAccount" class="cc-account-fab" type="button" aria-label="Create or access your account">
+          <span class="cc-account-fab-avatar" aria-hidden="true"></span>
+        </button>
       </div>
 </main>
 <noscript><p style="padding:24px;font:16px system-ui">The campus map needs JavaScript. <a href="./">Back to Campus Corners</a></p></noscript>
+<script src="app/account.js"></script>
+<script src="app/onboarding.js"></script>
 <script src="app/app.js"></script>
 </body>
 </html>

@@ -21,7 +21,35 @@ The Campus-Corners repo still holds the data and the tools that feed the site:
 - clubs: `data/clubs/ucla-clubs.json`, restrooms and study spots: `data/explore/spots.json`
 - maps: `tools/recolor_line.py` (pink and orange line maps), `tools/footprints.py` (building outlines), `tools/walkgrid.py` (walkable grid for the route guide)
 
-Visitors' saved events, follows, reviews and added spots are kept in their own browser for now.
+Guest saves, follows, reviews and added spots stay in that browser. Signed-in saved events and Sparko tour progress sync to the account through the local Django API.
+
+## Account scope
+
+Accounts support email/password sign-in and profile edits. Signup passwords can be 8–128 characters and are stored as Argon2 hashes. Each SQL profile stores a nickname and a `profile_icon` key; new accounts default to `sparko`, the site mascot. The picker also offers a star, flower, and heart. The database stores these short keys, not image data; the website maps each key to a bundled image. The UCLA profile frame is shown only when the server marks an account's UCLA email as verified. Email verification delivery, UCLA single sign-on, email or password changes, and uploaded pictures are outside this review. Registration does not send email.
+
+The homepage **Explore the map** action opens the map directly. Guests see the login form in a floating dialog over the map and can continue as a guest; signed-in visitors go straight to the map. The four-item bottom bar keeps Settings, and a separate floating Account button opens the dedicated account screen. Guests use a warm-toned profile silhouette.
+
+### What is stored
+
+- `accounts_user`: UUID primary key, normalized unique email, nickname, `profile_icon` key, Argon2 password hash, account dates, and optional email verification date.
+- `accounts_userpreferences`: email choice and its timestamps.
+- `accounts_useronboarding`: tour status, current step, and a JSON list of skipped steps.
+- `accounts_savedevent`: one row per saved event, with the event key and saved date.
+- `django_session`: server-side session content; the browser cookie contains only the opaque session identifier.
+
+The signed-in user's profile is also returned by `/api/auth/me` as JSON. Profile updates go through `/api/me/profile`, which only accepts `nickname` and an allowed `profile_icon` key. The staff page at `/admin/` reads the same database; it masks email in account lists and excludes password hashes and session contents.
+
+## Staff data center
+
+The Django backend provides a preliminary read-only HTML data center at `/admin/`. It is protected by Django staff sign-in. The account list masks email addresses; an authorized account detail page shows the full email. Staff can inspect account profile fields, saved-event rows, preferences, and current tour progress. Password hashes, active sessions, temporary rate-limit rows, editing, and deletion are excluded.
+
+After applying migrations, create an administrator interactively on the machine that runs Django:
+
+~~~
+server/var/venv/bin/python server/manage.py createsuperuser
+~~~
+
+The command prompts for the administrator email, nickname, and password. Keep that credential outside this repository. Then open `http://localhost:8000/admin/` while the local server is running. The local records are stored in SQLite at `server/var/dev.sqlite3` by default; `DJANGO_SQLITE_NAME` can choose another file and `DATABASE_URL` selects PostgreSQL. A hosted admin needs the Django backend and a shared persistent database; the static site alone cannot securely serve private account records. No administrator credential is created by the app.
 
 ## To do before going public
 
@@ -31,8 +59,32 @@ Visitors' saved events, follows, reviews and added spots are kept in their own b
 
 ## Preview on your computer
 
-```
-python3 -m http.server 8000
-```
+The local review server serves the existing site and /api/ from the same origin.
+Use Python 3.12 and the Django dependencies in server/requirements.txt.
 
-Then open http://localhost:8000.
+~~~
+python3.12 -m venv server/var/venv
+server/var/venv/bin/python -m pip install -r server/requirements.txt
+cp server/.env.example server/.env
+~~~
+
+Replace the example secret in server/.env with a random value, then run:
+
+~~~
+server/var/venv/bin/python server/manage.py migrate
+server/var/venv/bin/python server/manage.py runserver
+~~~
+
+Open http://localhost:8000/app.html. SQLite data lives in the ignored
+server/var/dev.sqlite3 file. For a hosted WSGI preview, set DATABASE_URL to
+PostgreSQL, set a stable DJANGO_SECRET_KEY, use secure cookies and HTTPS, then
+run collectstatic; the static source allowlist contains only app/, css/, img/,
+and js/.
+
+For the Django and browser checks, install `server/requirements-dev.txt` and run
+`server/var/venv/bin/python -m playwright install chromium`. Then run
+`server/var/venv/bin/python server/manage.py test accounts` and
+`server/var/venv/bin/python server/accounts/browser_tests.py`. The browser check
+uses a temporary database and preview server.
+
+The historical events in the map remain a sample week and are not current listings.

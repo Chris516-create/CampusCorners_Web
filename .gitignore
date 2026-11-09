@@ -1,0 +1,11 @@
+# Local Django state and credentials
+.env
+**/.env
+server/var/
+server/.venv/
+*.sqlite3
+*.sqlite3-*
+*.log
+*.bak
+__pycache__/
+*.py[cod]

@@ -58,11 +58,140 @@ const S={mode:"events",day:FROM,cats:null,saved:new Set(),went:new Set(),tab:"ma
   mineOnly:false,recOpen:false,stickers:new Set(),skin:"default",selStk:null,lastFound:null,
   passed:new Set(),hist:[],order:[],shMsg:"",
   follow:new Set(),clubF:new Set(),clubQ:"",clubOpen:null,reviews:{},toExp:new Set(),mySpots:[],exF:"all",shTab:"events",orderX:[],passedX:new Set()};
-try{const m=JSON.parse(localStorage.getItem("campus-corners")||"null");if(m){S.saved=new Set(m.saved||[]);S.went=new Set(m.went||[]);S.stickers=new Set(m.stickers||[]);if(m.tips===false)S.tips=false;if(typeof m.skin==="string")S.skin=m.skin;
+const VALID_TABS=["map","shuffle","mine","account","settings"],TAB_STORAGE_KEY="cc:app-tab:v1";
+function validTab(value){return VALID_TABS.indexOf(value)>=0}
+let exploreEntryPending=new URLSearchParams(location.search).get("entry")==="explore";
+let exploreEntryHandled=false,exploreEntryOnboardingStarted=false;
+function initialTab(){
+  const hash=location.hash.slice(1);
+  if(hash)return validTab(hash)?hash:"map";
+  try{const saved=localStorage.getItem(TAB_STORAGE_KEY);if(validTab(saved))return saved}catch(_){}
+  return "map";
+}
+S.tab=initialTab();
+let lastRenderedTab=S.tab;
+const GUEST_KEY="cc:guest:v1",GUEST_BACKUP_KEY="cc:guest:legacy-backup:v1",DEVICE_KEY="cc:device:v1";
+const accountDeviceKey=id=>"cc:device-user:v1:"+id;
+function readStored(key){try{return JSON.parse(localStorage.getItem(key)||"null")}catch(_){return null}}
+try{
+  const legacy=localStorage.getItem("campus-corners");
+  if(legacy&&!localStorage.getItem(GUEST_BACKUP_KEY))localStorage.setItem(GUEST_BACKUP_KEY,legacy);
+  if(legacy&&!localStorage.getItem(GUEST_KEY))localStorage.setItem(GUEST_KEY,legacy);
+  const guest=readStored(GUEST_KEY)||{},device=readStored(DEVICE_KEY)||{},m=Object.assign({},guest,device);
+  S.saved=new Set(Array.isArray(guest.saved)?guest.saved:[]);
+  S.went=new Set(Array.isArray(guest.went)?guest.went:[]);
+  S.stickers=new Set(m.stickers||[]);if(m.tips===false)S.tips=false;if(typeof m.skin==="string")S.skin=m.skin;
   S.follow=new Set(m.follow||[]);S.clubF=new Set((m.clubF||[]).filter(h=>S.follow.has(h)));if(m.reviews&&typeof m.reviews==="object")S.reviews=m.reviews;
-  S.toExp=new Set(m.toExp||[]);if(Array.isArray(m.mySpots))S.mySpots=m.mySpots.filter(x=>x&&x.id&&x.title)}}catch(_){}
-function persist(){try{localStorage.setItem("campus-corners",JSON.stringify({saved:[...S.saved],went:[...S.went],stickers:[...S.stickers],tips:S.tips,skin:S.skin,
-  follow:[...S.follow],clubF:[...S.clubF],reviews:S.reviews,toExp:[...S.toExp],mySpots:S.mySpots}))}catch(_){}}
+  S.toExp=new Set(m.toExp||[]);if(Array.isArray(m.mySpots))S.mySpots=m.mySpots.filter(x=>x&&x.id&&x.title)
+}catch(_){}
+function persist(){
+  try{
+    const shared={stickers:[...S.stickers],tips:S.tips,skin:S.skin,follow:[...S.follow],clubF:[...S.clubF],reviews:S.reviews,toExp:[...S.toExp],mySpots:S.mySpots};
+    localStorage.setItem(DEVICE_KEY,JSON.stringify(shared));
+    const A=window.CampusCornersAccount;
+    if(A&&A.isAuthenticated()){
+      const user=A.getUser(),local=readStored(accountDeviceKey(user.id))||{};
+      localStorage.setItem(accountDeviceKey(user.id),JSON.stringify(Object.assign({},local,{went:[...S.went]})));
+    }else if(!A||A.getStatus()==="guest"){
+      localStorage.setItem(GUEST_KEY,JSON.stringify(Object.assign({},shared,{saved:[...S.saved],went:[...S.went]})));
+    }
+  }catch(_){}
+}
+const pendingEventSaves=new Set();
+function emitCampusEvent(name,detail){window.dispatchEvent(new CustomEvent(name,{detail:detail||{}}))}
+function actionStatus(message){const el=$("ccActionStatus");if(el)el.textContent=message||""}
+function writeTabHash(tab,replace){
+  const next=validTab(tab)?tab:"map";
+  try{localStorage.setItem(TAB_STORAGE_KEY,next)}catch(_){}
+  const url=location.pathname+location.search+"#"+next;
+  if(location.pathname+location.search+location.hash===url)return;
+  if(replace)history.replaceState({tab:next},"",url);else history.pushState({tab:next},"",url);
+}
+function startExploreEntryOnboarding(){
+  if(exploreEntryOnboardingStarted)return;
+  exploreEntryOnboardingStarted=true;
+  if(window.CampusCornersOnboarding)window.CampusCornersOnboarding.start();
+}
+function handleExploreEntry(status){
+  if(!exploreEntryPending||S.tab!=="map")return false;
+  if(status!=="guest"&&status!=="authenticated")return true;
+  exploreEntryPending=false;exploreEntryHandled=true;
+  const url=new URL(location.href);url.searchParams.delete("entry");
+  history.replaceState(history.state,"",url.pathname+url.search+url.hash);
+  if(status==="guest"&&window.CampusCornersAccount){
+    window.CampusCornersAccount.openAuthModal("login",{
+      onCancel:startExploreEntryOnboarding,
+      onGuestContinue:startExploreEntryOnboarding
+    });
+  }else startExploreEntryOnboarding();
+  return true;
+}
+function tabFromLocation(){
+  const hash=location.hash.slice(1);
+  if(hash)return validTab(hash)?hash:"map";
+  try{const saved=localStorage.getItem(TAB_STORAGE_KEY);if(validTab(saved))return saved}catch(_){}
+  return "map";
+}
+function navigateTab(tab,options){
+  options=options||{};
+  const next=validTab(tab)?tab:"map";
+  if(next===S.tab)return;
+  if(next!=="map"&&window.CampusCornersOnboarding&&window.CampusCornersOnboarding.isActive())window.CampusCornersOnboarding.suspend();
+  S.tab=next;S.recOpen=false;
+  if(options.writeHash!==false)writeTabHash(next,!!options.replace);
+  closeSheet();render();
+  if(next==="map"&&options.startOnboarding!==false&&!handleExploreEntry(window.CampusCornersAccount&&window.CampusCornersAccount.getStatus())&&window.CampusCornersOnboarding)window.CampusCornersOnboarding.start();
+}
+function syncTabFromLocation(){
+  const hash=location.hash.slice(1),next=tabFromLocation();
+  if(!hash||!validTab(hash))writeTabHash(next,true);
+  if(next===S.tab)return;
+  if(next!=="map"&&window.CampusCornersOnboarding&&window.CampusCornersOnboarding.isActive())window.CampusCornersOnboarding.suspend();
+  S.tab=next;closeSheet();render();
+  if(next==="map"&&!handleExploreEntry(window.CampusCornersAccount&&window.CampusCornersAccount.getStatus())&&window.CampusCornersOnboarding)window.CampusCornersOnboarding.start();
+}
+window.addEventListener("popstate",syncTabFromLocation);
+window.addEventListener("hashchange",syncTabFromLocation);
+function renderAccountFab(){
+  const tab=$("tAccount"),accounts=window.CampusCornersAccount;
+  if(!tab)return;
+  tab.replaceChildren();
+  const status=accounts?accounts.getStatus():"guest";
+  const user=accounts&&accounts.isAuthenticated()?accounts.getUser():null;
+  const avatar=document.createElement("span");
+  avatar.className="cc-account-fab-avatar"+(user&&user.is_verified_ucla?" is-ucla-verified":"");
+  if(status==="loading"){
+    const pending=document.createElement("span");pending.className="cc-account-fab-placeholder";pending.setAttribute("aria-hidden","true");avatar.appendChild(pending);
+  }else{
+    const image=document.createElement("img");
+    image.src=user&&accounts&&typeof accounts.profileIconUrl==="function"?accounts.profileIconUrl(user.profile_icon):"app/profile-guest.svg";
+    image.alt="";avatar.appendChild(image);
+    if(user&&user.is_verified_ucla){const star=document.createElement("span");star.className="cc-profile-star";star.setAttribute("aria-hidden","true");star.textContent="★";avatar.appendChild(star)}
+  }
+  tab.appendChild(avatar);
+  tab.hidden=S.tab==="account";
+  tab.setAttribute("aria-label",user?"Account for "+user.nickname:status==="loading"?"Checking your account":status==="error"?"Account connection unavailable; open to retry":"Create or access your account");
+}
+async function changeEventSaved(id,shouldSave,options){
+  options=options||{};if(pendingEventSaves.has(id))return false;
+  pendingEventSaves.add(id);
+  try{
+    const A=window.CampusCornersAccount;
+    if(A)await A.ready();
+    if(A&&A.getStatus()==="error")throw new Error("Your account status is still unknown. Retry the account check before saving.");
+    if(A&&A.isAuthenticated())await A.saveEvent(id,shouldSave);
+    else if(A&&A.getStatus()!=="guest")throw new Error("The account service is still checking your session. Try again.");
+    if(shouldSave)S.saved.add(id);else S.saved.delete(id);
+    if(options.removeWent)S.went.delete(id);
+    actionStatus("");
+    emitCampusEvent(shouldSave?"cc:event-saved":"cc:event-unsaved",{eventId:id});
+    if(options.render!==false)render();
+    return true;
+  }catch(error){
+    actionStatus(error.message||"The save could not be confirmed. Please try again.");
+    return false;
+  }finally{pendingEventSaves.delete(id)}
+}
 // stickers = one per inspiration spot. A sticker with a `skin` also unlocks a theme: its colors, its own map,
 // and Sparko shown as that sticker. Only Planetarium has one so far (starry map, dark blue and gold).
 const STK="app/stickers/";
@@ -143,6 +272,7 @@ function drawPins(){
   const r=map.getBoundingClientRect(),k=r.width?V.w/r.width:1;
   pinSpecs.forEach(p=>{
     const g=el("g",{class:"pin",tabindex:0,role:"button","aria-label":p.label,transform:`translate(${p.x+(p.dx||0)*k} ${p.y}) scale(${k}) translate(0 -18)`},pinLayer);
+    if(p.tour)g.setAttribute("data-tour",p.tour);
     el("circle",{cx:0,cy:-4,r:22,fill:"transparent"},g);
     if(p.star){
       const dp=getComputedStyle(app).getPropertyValue("--pdeep").trim()||"#DC2861";
@@ -183,6 +313,7 @@ window.addEventListener("resize",clampV);
 
 /* ---------- render ---------- */
 function render(){
+  if(S.tab!==lastRenderedTab){writeTabHash(S.tab,false);lastRenderedTab=S.tab}
   persist();
   const ex=S.mode==="explore";
   app.classList.toggle("explore",ex&&S.tab==="map");
@@ -201,7 +332,7 @@ function render(){
   else{
     const on=dayEvents(S.day).filter(e=>e.p);const by={};on.forEach(e=>{(by[e.p]=by[e.p]||[]).push(e)});
     Object.entries(by).forEach(([k,arr])=>arr.forEach((e,i)=>{const p=PLACES[k],c=CATS[e.cat];
-      pin({x:p.x,y:p.y,dx:(i-(arr.length-1)/2)*28,color:c.g,unsure:e.tu,label:`${e.t}, ${c.name}, ${p.n}${e.tu?", time not confirmed":""}`,onClick:()=>openEvent(e),state:S.went.has(e.id)?"went":S.saved.has(e.id)?"saved":null})}));
+      pin({x:p.x,y:p.y,dx:(i-(arr.length-1)/2)*28,color:c.g,unsure:e.tu,tour:"event-"+e.id,label:`${e.t}, ${c.name}, ${p.n}${e.tu?", time not confirmed":""}`,onClick:()=>openEvent(e),state:S.went.has(e.id)?"went":S.saved.has(e.id)?"saved":null})}));
   }
   drawPins();drawRoute();
   const off=dayEvents(S.day).filter(e=>!e.p).length;
@@ -212,8 +343,11 @@ function render(){
   $("vMap").setAttribute("aria-pressed",S.view==="map");$("vList").setAttribute("aria-pressed",S.view==="list");
   renderFilters();renderPanels();renderShuffle();renderRecs();
   $("recBtn").setAttribute("aria-expanded",S.recOpen);$("recBtn").hidden=!RECS.some(id=>{const e=EVENTS.find(x=>x.id===id);return e&&e.days.some(d=>d>=FROM)});
+  ["tMap","tShuf","tMine"].forEach((id,i)=>$(id).setAttribute("aria-current",["map","shuffle","mine"][i]===S.tab));
   ["tMap","tShuf","tMine","tSet"].forEach((id,i)=>$(id).setAttribute("aria-current",["map","shuffle","mine","settings"][i]===S.tab));
+  renderAccountFab();
   $("sparko").hidden=!S.tips||!sheet.hidden||S.tab!=="map"||S.view==="list"||!!(S.route&&S.mode==="events");
+  emitCampusEvent("cc:render",{});
 }
 function renderWeek(){
   $("month").textContent=fmt(dayDate(S.day),{month:"long",year:"numeric"});
@@ -239,16 +373,16 @@ function renderFilters(){
     b.onclick=()=>{S.clubF.has(c.h)?S.clubF.delete(c.h):S.clubF.add(c.h);render()};f.appendChild(b)});
   f.appendChild(mine);f.appendChild(all);
   Object.entries(CATS).forEach(([k,c])=>{const b=document.createElement("button");b.className="chip";b.setAttribute("aria-pressed",!!S.cats&&S.cats.has(k));
-    b.innerHTML=`${badge(k)}${c.name}`;
-    b.onclick=()=>{if(!S.cats)S.cats=new Set();S.cats.has(k)?S.cats.delete(k):S.cats.add(k);if(!S.cats.size)S.cats=null;render()};f.appendChild(b)});
+    b.innerHTML=`${badge(k)}${c.name}`;b.dataset.tour="category-"+k;
+    b.onclick=()=>{if(!S.cats)S.cats=new Set();S.cats.has(k)?S.cats.delete(k):S.cats.add(k);if(!S.cats.size)S.cats=null;render();emitCampusEvent("cc:category-change",{category:k})};f.appendChild(b)});
 }
 function row(e){const c=CATS[e.cat],st=S.went.has(e.id)?"✓ Went":S.saved.has(e.id)?"♥ Saved":"";
-  return `<button class="row" data-id="${e.id}"><span class="dot" style="background:${c.c}">${badge(e.cat)}</span><span><b>${esc(e.t)}</b><span>${e.time} · ${esc(e.placeText)}</span></span><span class="st">${st}</span></button>`}
+  return `<button class="row" data-id="${e.id}" data-tour="event-${e.id}"><span class="dot" style="background:${c.c}">${badge(e.cat)}</span><span><b>${esc(e.t)}</b><span>${e.time} · ${esc(e.placeText)}</span></span><span class="st">${st}</span></button>`}
 function wireRows(el){el.querySelectorAll(".row").forEach(r=>r.onclick=()=>openEvent(EVENTS.find(x=>x.id===r.dataset.id)))}
 function renderPanels(){
-  const L=$("list"),M=$("mine"),T=$("settings");
+  const L=$("list"),M=$("mine"),T=$("settings"),AC=$("account");
   L.hidden=!(S.tab==="map"&&S.view==="list"&&S.mode==="events");
-  M.hidden=S.tab!=="mine";T.hidden=S.tab!=="settings";
+  M.hidden=S.tab!=="mine";T.hidden=S.tab!=="settings";AC.hidden=S.tab!=="account";
   if(!L.hidden){const ev=dayEvents(S.day);
     const groups=[["confirmed","On campus",""],["tbd","Location not confirmed","not on the map until verified"],["online","Online",""],["offcampus","Off campus",""],["multiple","Multiple locations",""]];
     L.innerHTML=`<div style="height:44px"></div>`+(ev.length?groups.map(([k,h,n])=>{const g=ev.filter(e=>e.loc===k);return g.length?`<div class="sect">${h}<span>· ${g.length}${n?" · "+n:""}</span></div>`+g.map(row).join(""):""}).join(""):`<p class="empty">No events match these filters on this day.</p>`);wireRows(L)}
@@ -271,20 +405,24 @@ function renderPanels(){
         <div class="xrow">${rv?`<button class="rate has" data-x="${x.id}">${stars(rv.r)}</button>`:`<button class="rate" data-x="${x.id}">Rate</button>`}
         <button class="rm" data-x="${x.id}" aria-label="Remove ${esc(x.title)} from To explore">✕</button></div></div>`}).join("")+`</div>`
       :`<p class="empty">Swipe right on the Explore deck in Shuffle, or tap ☆ on a spot in Explore.</p>`);
-    M.querySelectorAll(".chk").forEach(c=>c.onchange=()=>{const id=c.dataset.id;if(c.checked){S.went.add(id);S.saved.add(id);celebrate()}else S.went.delete(id);render()});
+    M.querySelectorAll(".chk").forEach(c=>c.onchange=async()=>{const id=c.dataset.id;if(c.checked){const ok=await changeEventSaved(id,true,{render:false});if(!ok){c.checked=false;return}S.went.add(id);celebrate()}else S.went.delete(id);persist();render()});
     M.querySelectorAll(".info").forEach(b=>b.onclick=()=>openEvent(EVENTS.find(x=>x.id===b.dataset.id)));
     M.querySelectorAll(".route").forEach(b=>b.onclick=()=>startRoute(EVENTS.find(x=>x.id===b.dataset.id)));
-    M.querySelectorAll(".rm[data-id]").forEach(b=>b.onclick=()=>{S.saved.delete(b.dataset.id);S.went.delete(b.dataset.id);render()});
+    M.querySelectorAll(".rm[data-id]").forEach(b=>b.onclick=async()=>{if(await changeEventSaved(b.dataset.id,false,{render:false,removeWent:true}))render()});
     M.querySelectorAll(".rate[data-id]").forEach(b=>b.onclick=()=>{const e=EVENTS.find(x=>x.id===b.dataset.id);openReview(e.id,e.t,dateText(e))});
     M.querySelectorAll(".xinfo").forEach(b=>b.onclick=()=>openX(spotById(b.dataset.id)));
     M.querySelectorAll(".rate[data-x]").forEach(b=>b.onclick=()=>{const x=spotById(b.dataset.x);openReview(x.id,x.title,x.where)});
     M.querySelectorAll(".rm[data-x]").forEach(b=>b.onclick=()=>{S.toExp.delete(b.dataset.x);render()});
     $("addEv").onclick=()=>{S.tab="map";S.mode="events";S.view="list";render()}}
-  if(!T.hidden){T.innerHTML=`<h3>Settings</h3>
+  if(!AC.hidden&&window.CampusCornersAccount)window.CampusCornersAccount.renderAccount(AC);
+  if(!T.hidden){T.innerHTML=`<div class="cc-settings-header"><h3>Settings</h3><button class="cc-button cc-button-quiet" id="settingsBackAccount" type="button">‹ Back to Account</button></div>
     <div class="set"><label for="tipTog"><span>Sparko tips<small>Short hints on the map. You can close any tip.</small></span><input type="checkbox" class="tog" id="tipTog" ${S.tips?"checked":""}></label>
     <div class="li"><span>Motion<small>Follows your device's Reduce Motion setting.</small></span></div></div>
-    <div class="set"><div class="li"><span>Where events come from<small>UCLA Community calendar and club Instagram posts (official API). Every event links to its source. Showing ${fmt(dayDate(0),{month:"short",day:"numeric"})} – ${fmt(dayDate(NDAYS-1),{month:"short",day:"numeric"})}.</small></span></div>
-    <div class="li"><span>Map<small>Official UCLA campus map, March 2025.</small></span></div></div>`;
+    <div class="set"><div class="li"><span>Where events come from<small>UCLA Community calendar and club posts. Every event links to its source. Showing ${fmt(dayDate(0),{month:"short",day:"numeric"})} – ${fmt(dayDate(NDAYS-1),{month:"short",day:"numeric"})}.</small></span></div>
+    <div class="li"><span>Map<small>Official UCLA campus map, March 2025.</small></span></div></div>
+    <div class="set"><button class="cc-button cc-button-quiet" id="tourReplay" type="button">Replay Sparko tour</button></div>`;
+    $("settingsBackAccount").onclick=()=>navigateTab("account");
+    $("tourReplay").onclick=()=>{if(window.CampusCornersOnboarding)window.CampusCornersOnboarding.replay()};
     $("tipTog").onchange=e=>{S.tips=e.target.checked;if(!S.tips)bubble.hidden=true;render()}}
 }
 function openSpot(s){const p=PLACES[s.p];
@@ -341,7 +479,8 @@ function showSpotOnMap(x){S.tab="map";S.mode="explore";S.view="map";if(S.exF!=="
 let shBusy=false;
 function decide(id,yes,card){
   if(shBusy)return;const xp=S.shTab==="explore",item=xp?spotById(id):EVENTS.find(x=>x.id===id);if(!item)return;
-  const fin=()=>{shBusy=false;if(xp)(yes?S.toExp:S.passedX).add(id);else(yes?S.saved:S.passed).add(id);S.hist.push({xp,id});
+  const wasSaved=!xp&&S.saved.has(id),fin=async()=>{if(xp)(yes?S.toExp:S.passedX).add(id);else if(yes){const ok=await changeEventSaved(id,true,{render:false});if(!ok){shBusy=false;render();return}}else S.passed.add(id);
+    shBusy=false;S.hist.push({xp,id,yes,wasSaved});
     S.shMsg=yes?(xp?`☆ Added to To explore: ${item.title}`:`♥ Saved to My Events: ${item.t}`):`Passed: ${xp?item.title:item.t}`;render()};
   if(card&&!matchMedia("(prefers-reduced-motion: reduce)").matches){shBusy=true;const s=card.querySelector(yes?".yes":".no");if(s)s.style.opacity=1;
     card.style.transition="transform .26s ease-in,opacity .26s";card.style.transform=`translate(${yes?460:-460}px,40px) rotate(${yes?24:-24}deg)`;card.style.opacity=0;setTimeout(fin,240)}
@@ -376,8 +515,9 @@ function renderShuffle(){
   $("shEv").onclick=()=>{S.shTab="events";S.shMsg="";render()};$("shXp").onclick=()=>{S.shTab="explore";S.shMsg="";render()};
   $("shNo").onclick=()=>top&&decide(top.dataset.id,false,top);
   $("shYes").onclick=()=>top&&decide(top.dataset.id,true,top);
-  $("shUndo").onclick=()=>{let i=S.hist.length-1;while(i>=0&&S.hist[i].xp!==xp)i--;if(i<0)return;const h=S.hist.splice(i,1)[0];
-    if(xp){S.toExp.delete(h.id);S.passedX.delete(h.id)}else{S.saved.delete(h.id);S.went.delete(h.id);S.passed.delete(h.id)}S.shMsg="Brought back the last card";render()};
+  $("shUndo").onclick=async()=>{let i=S.hist.length-1;while(i>=0&&S.hist[i].xp!==xp)i--;if(i<0)return;const h=S.hist.splice(i,1)[0];
+    if(xp){S.toExp.delete(h.id);S.passedX.delete(h.id)}else if(h.yes){if(!h.wasSaved&&!await changeEventSaved(h.id,false,{render:false})){S.hist.push(h);return}}else S.passed.delete(h.id);
+    S.shMsg="Brought back the last card";render()};
   const m=$("shMine");if(m)m.onclick=()=>{S.tab="mine";render()};
   const g=$("shAgain");if(g)g.onclick=()=>{if(xp){S.passedX.clear();reshuffleX()}else{S.passed.clear();reshuffle()}S.hist=S.hist.filter(h=>h.xp!==xp);S.shMsg="";render()};
   applySkinImgs();
@@ -522,7 +662,7 @@ function gmSheet(o){
   <div class="gmhead"><h3 id="sheetTitle">${esc(o.title)}</h3>
     <div class="gmline">${sum.n?`<b>${sum.avg.toFixed(1)}</b>${starRow(sum.avg)}<button class="gmcount">(${sum.n})</button><span>·</span>`:""}${o.label}</div>
     ${o.sub?`<div class="gmsub">${o.sub}</div>`:""}</div>
-  <div class="gmacts">${o.actions.map((a,i)=>a.href?`<a class="gmact" href="${esc(a.href)}" target="_blank" rel="noopener"><span>${a.icon}</span>${esc(a.label)}</a>`:`<button class="gmact${a.on?" on":""}" data-a="${i}" aria-pressed="${!!a.on}"><span>${a.icon}</span>${esc(a.label)}</button>`).join("")}</div>
+  <div class="gmacts">${o.actions.map((a,i)=>a.href?`<a class="gmact" href="${esc(a.href)}" target="_blank" rel="noopener"><span>${a.icon}</span>${esc(a.label)}</a>`:`<button class="gmact${a.on?" on":""}" data-a="${i}"${a.tour?` data-tour="${a.tour}"`:""} aria-pressed="${!!a.on}"><span>${a.icon}</span>${esc(a.label)}</button>`).join("")}</div>
   ${tabs}<div class="gmpane">${S.sheetTab==="reviews"?reviews:o.overview}</div>`;
   sheet.classList.toggle("xp",!!o.xp);sheet.hidden=false;$("sparko").hidden=true;S.sheetFn=o.again;
   sheet.querySelector(".x").onclick=closeSheet;
@@ -539,9 +679,9 @@ function openEvent(e){const c=CATS[e.cat],place=e.p?PLACES[e.p].n:e.placeText,we
     hero:e.poster?`<img src="${esc(e.poster)}" alt="Poster for ${esc(e.t)}">`:`<svg class="gmmark" viewBox="0 0 100 100" aria-hidden="true" style="color:${c.g}"><use href="#ccg"/></svg>`,
     heroBg:e.poster?"#1F1A17":`linear-gradient(135deg,${c.c},#fff)`,
     label:`<span class="gmcat">${badge(e.cat)}${c.name}</span>`,sub:`${esc(dateText(e))} · ${esc(e.time)}`,
-    actions:[{icon:saved?"♥":"♡",label:saved?"Saved":"Save",on:saved,fn:()=>{saved?S.saved.delete(e.id):(S.saved.add(e.id),tip("saved"));render();openEvent(e)}},
-      {icon:"✓",label:went?"Went":"Went?",on:went,fn:()=>{if(went)S.went.delete(e.id);else{S.went.add(e.id);S.saved.add(e.id);celebrate();S.sheetTab="reviews"}render();openEvent(e)}},
-      ...(e.p?[{icon:ROUTE_ICON,label:"Route",fn:()=>startRoute(e)}]:[]),
+    actions:[{icon:saved?"♥":"♡",label:saved?"Saved":"Save",on:saved,tour:"event-save",fn:async()=>{const shouldSave=!S.saved.has(e.id);if(!await changeEventSaved(e.id,shouldSave,{render:false}))return;if(shouldSave)tip("saved");render();openEvent(e)}},
+      {icon:"✓",label:went?"Went":"Went?",on:went,fn:async()=>{if(went)S.went.delete(e.id);else{if(!await changeEventSaved(e.id,true,{render:false}))return;S.went.add(e.id);celebrate();S.sheetTab="reviews"}persist();render();openEvent(e)}},
+      ...(e.p?[{icon:ROUTE_ICON,label:"Route",tour:"event-route",fn:()=>startRoute(e)}]:[]),
       ...(e.loc!=="online"&&e.loc!=="tbd"?[{icon:"➜",label:"Directions",href:DIRURL(place+(e.p?", UCLA, Los Angeles":""))}]:[]),
       {icon:"↗",label:e.srcName.startsWith("Instagram")?"Post":"Event page",href:e.src}],
     overview:`${e.tbd?`<div class="warn"><b>${LOCMSG[e.loc]}</b> Not shown on the map.</div>`:(!e.p?`<div class="warn">This spot isn't on our map yet, so there's no pin.</div>`:"")}
@@ -549,7 +689,8 @@ function openEvent(e){const c=CATS[e.cat],place=e.p?PLACES[e.p].n:e.placeText,we
       ${e.notes.length?`<div class="warn"><b>Check the post:</b> ${e.notes.map(esc).join(" ")}</div>`:""}
       <dl class="meta"><dt>When</dt><dd>${dateText(e)} · ${esc(e.time)}</dd><dt>Where</dt><dd>${esc(e.placeText)}</dd><dt>Host</dt><dd>${esc(e.host)}</dd></dl>
       <p class="gmdesc">${esc(e.desc)}</p><p class="src">Source: <a href="${esc(e.src)}" target="_blank" rel="noopener">${esc(e.srcName)} ↗</a></p>`,
-    canReview:went,reviewHint:"Mark it as went to rate and review it.",reviewSub:dateText(e)})}
+    canReview:went,reviewHint:"Mark it as went to rate and review it.",reviewSub:dateText(e)});
+  emitCampusEvent("cc:detail-open",{eventId:e.id})}
 function openX(x){if(!x)return;const K=KIND[x.kind],on=S.toExp.has(x.id),place=x.p?PLACES[x.p].n:null;
   const st=x.kind==="sparko"&&STICKERS.find(k=>k.spot===x.id);
   gmSheet({id:x.id,title:x.title,again:()=>openX(spotById(x.id)),
@@ -590,7 +731,7 @@ function findRoute(a,b){const G=walkGrid(),W=WALK.w,H=WALK.h,C=WALK.cell;
   const pts=keep.map(i=>({x:(i%W)*C+C/2,y:(i/W|0)*C+C/2}));pts[0]={x:a.x,y:a.y};pts.push({x:b.x,y:b.y});
   let len=0;for(let k=1;k<pts.length;k++)len+=Math.hypot(pts[k].x-pts[k-1].x,pts[k].y-pts[k-1].y);return{pts,len}}
 const ROUTE_FROM=["bruinplaza","ackerman","powell","yrl","royce","boelter","engr6","pauley","covel","rieber","sunsetrec","kerckhoff","sac","janss"];
-function startRoute(e){if(!e||!e.p)return;const d=e.days.find(x=>x>=FROM);S.route={id:e.id,from:S.routeFrom||"bruinplaza"};
+function startRoute(e){if(!e||!e.p)return;emitCampusEvent("cc:route-attempt",{eventId:e.id});const d=e.days.find(x=>x>=FROM);S.route={id:e.id,from:S.routeFrom||"bruinplaza"};
   S.tab="map";S.mode="events";S.view="map";S.recOpen=false;if(d!==undefined)S.day=d;closeSheet();bubble.hidden=true;render();fitRoute()}
 function routeData(){if(!S.route)return null;const e=EVENTS.find(x=>x.id===S.route.id);if(!e||!e.p)return null;const a=PLACES[S.route.from]||PLACES.bruinplaza,b=PLACES[e.p];
   const key=S.route.from+">"+e.p;if(routeData.k!==key){routeData.k=key;routeData.v=findRoute(a,b)}return routeData.v?{e,a,b,...routeData.v}:null}
@@ -613,7 +754,7 @@ function drawRoute(){cancelAnimationFrame(routeAnim);const bar=$("routebar");con
   bar.innerHTML=`<img src="app/sparko.webp" alt="" class="skinned"><div class="rbtxt"><b>Sparko is walking you to ${esc(r.e.t)}</b><span>${esc(PLACES[r.e.p].n)} · about ${mins} min walk</span>
     <label>From <select id="routeFrom">${ROUTE_FROM.filter(k=>PLACES[k]&&k!==r.e.p).map(k=>`<option value="${k}" ${k===S.route.from?"selected":""}>${esc(PLACES[k].n)}</option>`).join("")}</select></label></div>
     <button id="routeX" aria-label="End route">✕</button>`;
-  bar.hidden=false;$("routeFrom").onchange=ev=>{S.route.from=S.routeFrom=ev.target.value;render();fitRoute()};
+  bar.hidden=false;emitCampusEvent("cc:route-visible",{eventId:r.e.id});$("routeFrom").onchange=ev=>{S.route.from=S.routeFrom=ev.target.value;render();fitRoute()};
   $("routeX").onclick=()=>{S.route=null;render()};applySkinImgs()}
 const TIPS={
   events:()=>{const n=dayEvents(S.day).filter(e=>e.p).length;return n?[`${n} ${n===1?"event":"events"} on the map ${S.day===TODAY?"today":"this day"}. Tap a pin to peek.`,null]:["Quiet day here. Want to check tomorrow?",["Next day",()=>{S.day=Math.min(NDAYS-1,S.day+1);render()}]]},
@@ -621,6 +762,7 @@ const TIPS={
   explore:()=>["Stars are Sparko corners. Sparko on a toilet means a good restroom, Sparko reading means a study spot.",null]
 };
 function tip(key,force){
+  if(window.CampusCornersOnboarding&&window.CampusCornersOnboarding.isActive())return;
   if(!S.tips||(!force&&(S.tipsOff>=2||S.shownTips.has(key))))return;
   S.shownTips.add(key);const [msg,act]=TIPS[key]();
   bubble.innerHTML=`${esc(msg)}${act?`<button class="act">${esc(act[0])} ›</button>`:""}<button class="close" aria-label="Dismiss tip">✕</button>`;
@@ -638,11 +780,12 @@ $("recBtn").onclick=()=>{S.recOpen=!S.recOpen;closeSheet();render()};
 $("scanBtn").onclick=openScan;
 $("vMap").onclick=()=>{S.view="map";render()};$("vList").onclick=()=>{S.view="list";closeSheet();render()};
 $("offPill").onclick=()=>{S.view="list";closeSheet();render()};
-$("tMap").onclick=()=>{S.tab="map";closeSheet();render()};
-$("tShuf").onclick=()=>{S.tab="shuffle";S.shMsg="";S.recOpen=false;closeSheet();render()};
+$("tMap").onclick=()=>navigateTab("map");
+$("tShuf").onclick=()=>{S.shMsg="";navigateTab("shuffle")};
 $("mEvents").addEventListener("click",()=>requestAnimationFrame(fitDay));
-$("tMine").onclick=()=>{S.tab="mine";closeSheet();render()};
-$("tSet").onclick=()=>{S.tab="settings";closeSheet();render()};
+$("tMine").onclick=()=>navigateTab("mine");
+$("tSet").onclick=()=>navigateTab("settings");
+$("tAccount").onclick=()=>navigateTab("account");
 
 // Opening screen: one random club poster, then the map
 function closeSplash(e){$("splash").hidden=true;setTimeout(()=>tip("events"),500);
@@ -656,5 +799,34 @@ function openSplash(){const pool=EVENTS.filter(e=>e.poster&&e.days.some(d=>d>=FR
   s.onkeydown=k=>{if(k.key==="Escape")closeSplash()};$("splashX").focus({preventScroll:true})}
 if(S.skin!=="default"&&S.stickers.has(S.skin))applySkin(S.skin);else{S.skin="default";render();applySkinImgs()}
 requestAnimationFrame(fitDay);
-openSplash();
+const tourEvent=e=>!!(e&&e.loc==="confirmed"&&e.p&&PLACES[e.p]&&e.p!=="bruinplaza"&&e.days.some(d=>d>=FROM)&&findRoute(PLACES.bruinplaza,PLACES[e.p]));
+const tourBridge={
+  navigateTab:navigateTab,
+  afterLogout:()=>navigateTab("map",{replace:true,startOnboarding:false}),
+  getUIState:()=>({mode:S.mode,day:S.day,categories:S.cats?Array.from(S.cats):null,tab:S.tab,view:S.view,route:S.route?{id:S.route.id,from:S.route.from}:null,mineOnly:S.mineOnly,recOpen:S.recOpen,clubF:Array.from(S.clubF),mineSeg:S.mineSeg,routeFrom:S.routeFrom}),
+  captureUIState:()=>({mode:S.mode,day:S.day,categories:S.cats?Array.from(S.cats):null,tab:S.tab,view:S.view,route:S.route?{id:S.route.id,from:S.route.from}:null,mineOnly:S.mineOnly,recOpen:S.recOpen,clubF:Array.from(S.clubF),mineSeg:S.mineSeg,routeFrom:S.routeFrom}),
+  prepareTour:()=>{S.mode="events";S.tab="map";S.view="map";S.day=FROM;S.cats=null;S.mineOnly=false;S.clubF.clear();S.recOpen=false;S.route=null;bubble.hidden=true;closeSheet();render();fitDay()},
+  findCurrentTourEvent:()=>{const e=dayEvents(S.day).find(tourEvent);return e?{id:e.id,title:e.t}:null},
+  getSampleEvent:()=>{const e=EVENTS.find(tourEvent);return e?{id:e.id,title:e.t}:null},
+  getAlternativeSample:id=>{const e=EVENTS.find(x=>x.id!==id&&tourEvent(x));return e?{id:e.id,title:e.t}:null},
+  selectSampleEvent:id=>{const e=EVENTS.find(x=>x.id===id&&tourEvent(x));if(!e)return;S.mode="events";S.tab="map";S.view="map";S.day=e.days.find(d=>d>=FROM);S.cats=new Set([e.cat]);S.mineOnly=false;S.clubF.clear();S.recOpen=false;S.route=null;bubble.hidden=true;closeSheet();render();centerOn(PLACES[e.p].x,PLACES[e.p].y,480)},
+  centerEvent:id=>{const e=EVENTS.find(x=>x.id===id);if(e&&e.p&&PLACES[e.p])centerOn(PLACES[e.p].x,PLACES[e.p].y,460)},
+  openEvent:id=>{const e=EVENTS.find(x=>x.id===id);if(e)openEvent(e)},
+  getEventSummary:id=>{const e=EVENTS.find(x=>x.id===id);return e?{id:e.id,title:e.t}:null},
+  isEventSaved:id=>S.saved.has(id),
+  isRouteVisible:id=>{const bar=$("routebar");return !!(S.route&&S.route.id===id&&bar&&!bar.hidden&&routeData())},
+  showMyEvents:()=>{S.tab="mine";S.mineSeg="saved";closeSheet();render()},
+  restoreUIState:state=>{if(!state)return;S.mode=state.mode||"events";S.day=Number.isInteger(state.day)?state.day:FROM;S.cats=Array.isArray(state.categories)?new Set(state.categories):null;S.tab=state.tab||"map";S.view=state.view||"map";S.route=state.route?{id:state.route.id,from:state.route.from}:null;S.mineOnly=!!state.mineOnly;S.recOpen=!!state.recOpen;S.clubF=new Set(state.clubF||[]);S.mineSeg=state.mineSeg||"saved";S.routeFrom=state.routeFrom||"bruinplaza";bubble.hidden=true;closeSheet();render();if(S.route)fitRoute();else if(S.mode==="explore")fitExplore();else fitDay()},
+  applyAccountData:(user,ids)=>{S.saved=new Set(ids||[]);const local=readStored(accountDeviceKey(user.id))||{};S.went=new Set(Array.isArray(local.went)?local.went:[]);S.mineOnly=false;S.route=null;render()},
+  restoreGuestData:()=>{const guest=readStored(GUEST_KEY)||{};S.saved=new Set(Array.isArray(guest.saved)?guest.saved:[]);S.went=new Set(Array.isArray(guest.went)?guest.went:[]);S.mineOnly=false;S.route=null;render()},
+  getGuestSavedIds:()=>{const guest=readStored(GUEST_KEY)||{},known=new Set(EVENTS.map(e=>e.id));return Array.isArray(guest.saved)?guest.saved.filter(id=>typeof id==="string"&&known.has(id)):[]},
+  redraw:()=>render()
+};
+if(window.CampusCornersOnboarding)window.CampusCornersOnboarding.init(tourBridge);
+syncTabFromLocation();
+if(window.CampusCornersAccount){
+  const accounts=window.CampusCornersAccount;
+  accounts.subscribe(snapshot=>handleExploreEntry(snapshot.status));
+  accounts.init(tourBridge).then(status=>{if(exploreEntryHandled||handleExploreEntry(status))return;if(S.tab==="map"&&window.CampusCornersOnboarding)window.CampusCornersOnboarding.start()});
+}
 })();

@@ -1,0 +1,35 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block content %}
+<div id="content-main" class="cc-admin-dashboard">
+  <section class="cc-admin-welcome" aria-labelledby="cc-admin-title">
+    <div>
+      <p class="cc-admin-eyebrow">{{ dashboard_environment }}</p>
+      <h2 id="cc-admin-title">Account overview</h2>
+      <p>Review current account profiles, saved events, and onboarding records from this database.</p>
+    </div>
+    <span class="cc-admin-access">Staff access · Read only</span>
+  </section>
+
+  <section class="cc-admin-summary" aria-label="Current database totals">
+    {% for stat in dashboard_stats %}
+      <article class="cc-admin-stat">
+        <span>{{ stat.label }}</span>
+        <strong>{{ stat.value }}</strong>
+        <small>{{ stat.detail }}</small>
+      </article>
+    {% endfor %}
+  </section>
+
+  <p class="cc-admin-privacy">Password hashes, login sessions, and temporary rate-limit records are not shown here. Email is masked in account lists and visible on an authorized account detail page.</p>
+
+  {% if app_list %}
+    <div class="cc-admin-models">
+      {% include "admin/app_list.html" with app_list=app_list show_changelinks=True %}
+    </div>
+  {% else %}
+    <p>{% translate "You don't have permission to view or edit anything." %}</p>
+  {% endif %}
+</div>
+{% endblock %}
