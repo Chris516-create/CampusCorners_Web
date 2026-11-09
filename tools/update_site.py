@@ -23,7 +23,7 @@ What it does:
      show exactly that week, Monday to Sunday (the site always shows the coming week only)
 Needs Python 3. Uses Pillow to resize images if installed, otherwise macOS `sips`.
 """
-import argparse, datetime as dt, json, re, shutil, subprocess, sys
+import argparse, datetime as dt, hashlib, json, re, shutil, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -105,6 +105,16 @@ def check(events, week, known_places, name):
         if not e["sourceUrls"]:
             errs.append("%s: needs a source link" % tag)
     return errs, warns
+
+
+def stamp_versions():
+    """Give app.js and app.css a ?v=<content hash> in app.html so browsers fetch the new files at once."""
+    page = ROOT / "app.html"
+    html = page.read_text(encoding="utf-8")
+    for name in ("app/app.js", "app/app.css"):
+        v = hashlib.md5((ROOT / name).read_bytes()).hexdigest()[:8]
+        html = re.sub(r'(["\'])' + re.escape(name) + r'(\?v=[0-9a-f]+)?(["\'])', r"\g<1>%s?v=%s\g<3>" % (name, v), html)
+    page.write_text(html, encoding="utf-8")
 
 
 def main():
@@ -218,6 +228,7 @@ def main():
         if gm:
             js = js[:gm.start()] + "const GROUPC=" + json.dumps(FIELD_COLORS, ensure_ascii=False) + ";" + js[gm.end():]
     APP.write_text(js, encoding="utf-8")
+    stamp_versions()
     print("\nUpdated app/app.js. Next: preview, then commit and open a pull request (see the weekly-events skill).")
 
 
