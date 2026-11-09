@@ -1,0 +1,577 @@
+[
+  {
+    "id": "ig-vsubruins-canes-sharetea",
+    "title": "Cane's x Sharetea Fundraiser for High School Conference",
+    "dates": [
+      "2026-11-09"
+    ],
+    "startTime": "11:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Sharetea (11am–12am) and Raising Cane's (7–11pm)",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "Vietnamese Student Union (@vsubruins)",
+    "description": "Order at Sharetea with code VSU (11am–midnight) or at Raising Cane's with code RCFUND96 (7–11pm); 15% supports VSU's High School Conference.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dff6U66Gbuk/"
+    ],
+    "sourceName": "Instagram @vsubruins (Graph API)",
+    "poster": "18093582521223313.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-projecteddance-bakesale",
+    "title": "PROJECTED Bake Sale",
+    "dates": [
+      "2026-11-09"
+    ],
+    "startTime": "09:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": "bruinwalk",
+    "placeText": "Bruin Walk",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "PROJECTED (@projected.dance)",
+    "description": "Banana bread and chocolate chip cookies from dance team PROJECTED, $2–$8. Preorder pickup and in-person sales.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfaWVZ2Iq15/"
+    ],
+    "sourceName": "Instagram @projected.dance (Graph API)",
+    "poster": "18132863866819379.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-gaatucla-geopardy",
+    "title": "GEO-PARDY: Geography Jeopardy Night",
+    "dates": [
+      "2026-11-09"
+    ],
+    "startTime": "16:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Bunche 1221B",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Geography Association (@gaatucla)",
+    "description": "Geography trivia with prizes and free food.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfTob-NSDSt/"
+    ],
+    "sourceName": "Instagram @gaatucla (Graph API)",
+    "poster": "17953756278297548.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-compbiobruins-pumpkin",
+    "title": "Pumpkin Painting Social",
+    "dates": [
+      "2026-11-09"
+    ],
+    "startTime": "18:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "royce",
+    "placeText": "Royce 164",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Computational Biologists’ Society (@compbiobruins)",
+    "description": "Cozy pumpkin painting with the Computational Biologists Society. RSVP via their bio link.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfVDikptTW4/"
+    ],
+    "sourceName": "Instagram @compbiobruins (Graph API)",
+    "poster": "18112195232613233.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-amcatucla-passrock",
+    "title": "Pass the Rock",
+    "dates": [
+      "2026-11-09"
+    ],
+    "startTime": "18:30",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Black Bruin Resource Center (BBRC)",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Afrikan Mxn's Collective (@amcatucla)",
+    "description": "Black male upperclassmen, grads and mentors share advice with the next generation. Food provided. With AfroGrad and BBRC.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfQPvgiygA1/"
+    ],
+    "sourceName": "Instagram @amcatucla (Graph API)",
+    "poster": "17975479827137774.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-bruinfinance-consulting101",
+    "title": "Consulting 101 Workshop",
+    "dates": [
+      "2026-11-09"
+    ],
+    "startTime": "18:30",
+    "endTime": "19:30",
+    "timeStatus": "confirmed",
+    "placeId": "kinsey",
+    "placeText": "Kinsey Pavilion Room 1200B",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Bruin Finance Society (@bruinfinance)",
+    "description": "Intro to consulting careers from Bruin Finance Society. No experience needed.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfYyr_pO6Fn/"
+    ],
+    "sourceName": "Instagram @bruinfinance (Graph API)",
+    "poster": "18101582087641410.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-asmebruins-slime",
+    "title": "Slime and Trivia",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "ASME Lounge",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "American Society of Mechanical Engineers (@asmebruins)",
+    "description": "Make your own slime and play trivia with ASME IE and SOLES SHPE+INA.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfWtwEgh_9E/"
+    ],
+    "sourceName": "Instagram @asmebruins (Graph API)",
+    "poster": "18010904213990694.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-bruinbizmgrs-creo",
+    "title": "Speaker Event: Creo Influence",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Google Meet",
+    "locationStatus": "online",
+    "category": "career",
+    "host": "Bruin Business Managers (@bruinbizmgrs)",
+    "description": "Creo Influence's co-founder on creator talent management and brand partnerships. RSVP via the club's bio link.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfbMX8PMzia/"
+    ],
+    "sourceName": "Instagram @bruinbizmgrs (Graph API)",
+    "poster": "17906993940669131.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-openorigins-diwali",
+    "title": "Diwali Celebration",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": "dodd",
+    "placeText": "Dodd Hall 162",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Open Origins @ UCLA (@openorigins)",
+    "description": "Snacks, diya painting and henna with Open Origins.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfY-Rgep1iP/"
+    ],
+    "sourceName": "Instagram @openorigins (Graph API)",
+    "poster": "17977163733148960.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-ucla_asa-gbm2",
+    "title": "Armenian Students' Association GM #2",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "18:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Neuroscience Research Building (NRB) 132",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Armenian Students’ Association (@ucla_asa)",
+    "description": "General meeting; mandatory for Big Bear trip goers.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfV_evFh_UU/"
+    ],
+    "sourceName": "Instagram @ucla_asa (Graph API)",
+    "poster": "18182306206434231.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-spsucla-karaoke",
+    "title": "SPS Karaoke Night",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "18:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Location sent after RSVP",
+    "locationStatus": "tbd",
+    "category": "community",
+    "host": "Society of Physics Students (@spsucla)",
+    "description": "Society of Physics Students karaoke night for midterm season. RSVP for the location.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfayuolMwes/"
+    ],
+    "sourceName": "Instagram @spsucla (Graph API)",
+    "poster": "18225892876340795.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-uclabrea-irongate",
+    "title": "BREA x Irongate Group",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "boelter",
+    "placeText": "Boelter Hall 5440",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Bruin Real Estate Association (@uclabrea)",
+    "description": "Bruin Real Estate Association hosts luxury real estate firm Irongate Group. Register via bio link.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfXxu0Yv3lT/"
+    ],
+    "sourceName": "Instagram @uclabrea (Graph API)",
+    "poster": "18026995115920039.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-netimpact_ucla-tfa",
+    "title": "Teach For America Info Session",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "career",
+    "host": "Net Impact @ UCLA - Undergraduate (@netimpact_ucla)",
+    "description": "Net Impact and TFA on opportunities, applications, resume tips and Q&A with TFA's UCLA recruiter. RSVP via bio link.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfTKzCgMzAf/"
+    ],
+    "sourceName": "Instagram @netimpact_ucla (Graph API)",
+    "poster": "18271856167305408.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-bruinmarketers-canes",
+    "title": "Bruin Marketers Cane's Social + Fundraiser",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "19:00",
+    "endTime": "23:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Raising Cane's, Westwood (meet at the Bruin Bear 6:40 PM)",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "Bruin Marketers (@bruinmarketers)",
+    "description": "Meet at the Bruin Bear at 6:40 and walk over together; use code RCFUND96.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfUyAVRxMy5/"
+    ],
+    "sourceName": "Instagram @bruinmarketers (Graph API)",
+    "poster": "18127802267307056.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-vibecheckatucl-commercial",
+    "title": "VibeCheck Commercial Combo",
+    "dates": [
+      "2026-11-10"
+    ],
+    "startTime": "21:00",
+    "endTime": "22:00",
+    "timeStatus": "confirmed",
+    "placeId": "wooden",
+    "placeText": "Gold Room, John Wooden Center",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "VibeCheck at UCLA (@vibecheckatucla)",
+    "description": "Intermediate/advanced commercial combo taught by Zach Levin. All levels welcome.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dffb1pFmS-h/"
+    ],
+    "sourceName": "Instagram @vibecheckatucla (Graph API)",
+    "poster": "17919052428263943.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-lcctheatre-mementomori",
+    "title": "Memento Mori (LCC Theatre)",
+    "dates": [
+      "2026-11-11",
+      "2026-11-13"
+    ],
+    "startTime": "18:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "franz",
+    "placeText": "Franz 2258A",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Lapu, the Coyote that Cares Theatre Company (LCC) (@lcctheatre)",
+    "description": "LCC Theatre's production. Tickets via their bio link.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfaWDQBPXTM/"
+    ],
+    "sourceName": "Instagram @lcctheatre (Graph API)",
+    "poster": "18101344883453263.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-uclatsa-movienight",
+    "title": "TSA Fam Movie Night",
+    "dates": [
+      "2026-11-12"
+    ],
+    "startTime": "19:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "kaplan",
+    "placeText": "Kaplan A40",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Taiwanese Student Association (@ucla.tsa)",
+    "description": "Screening with drinks and popcorn. TSA fam members only; RSVP in bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfdMcQYS1XR/"
+    ],
+    "sourceName": "Instagram @ucla.tsa (Graph API)",
+    "poster": "18079912412437246.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-uclamesa-dabke",
+    "title": "Dabke Night",
+    "dates": [
+      "2026-11-12"
+    ],
+    "startTime": "19:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "bruinplaza",
+    "placeText": "Bruin Plaza",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Middle Eastern Student Association (@uclamesa)",
+    "description": "Dabke dancing and music with MESA, PSU, PCRF, SOS, JAA and LSA. Beginners welcome.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfWZFq4BZL1/"
+    ],
+    "sourceName": "Instagram @uclamesa (Graph API)",
+    "poster": "18076246379579242.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-uclatasa-tailgate",
+    "title": "KASA x TASA x ACA Tailgate: UCLA vs Illinois",
+    "dates": [
+      "2026-11-13"
+    ],
+    "startTime": "16:00",
+    "endTime": "18:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Rose Bowl Stadium (exact spot TBA)",
+    "locationStatus": "offcampus",
+    "category": "sports",
+    "host": "Taiwanese American Student Association (@uclatasa)",
+    "description": "Tailgate before the game; wear UCLA gear. Food and Celsius provided.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfaR-Y7PNMZ/"
+    ],
+    "sourceName": "Instagram @uclatasa (Graph API)",
+    "poster": "17953485273343297.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-statisticsucla-bonfire",
+    "title": "Stats Club Beach Bonfire",
+    "dates": [
+      "2026-11-14"
+    ],
+    "startTime": "14:00",
+    "endTime": "18:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Dockweiler Beach",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "Statistics Club at UCLA (@statistics.ucla)",
+    "description": "Bonfire, beach games, s'mores and pizza. Limited rides for early RSVPs.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfVeH9-hv3v/"
+    ],
+    "sourceName": "Instagram @statistics.ucla (Graph API)",
+    "poster": "18101154116407874.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-hooligantheatr-oneacts",
+    "title": "Hooligan Theatre One Acts Showcase",
+    "dates": [
+      "2026-11-14"
+    ],
+    "startTime": "15:30",
+    "endTime": "18:00",
+    "timeStatus": "confirmed",
+    "placeId": "kerckhoff",
+    "placeText": "Kerckhoff Grand Salon",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "HOOLIGAN Theatre Company (@hooligantheatre)",
+    "description": "Student-written and directed one-act plays. Tickets coming soon.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfdIXj-Enk-/"
+    ],
+    "sourceName": "Instagram @hooligantheatre (Graph API)",
+    "poster": "18133817368783554.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-balletcompanya-nutcracker",
+    "title": "The Nutcracker (with a Twist!)",
+    "dates": [
+      "2026-11-14"
+    ],
+    "startTime": null,
+    "endTime": null,
+    "timeStatus": "tbd",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "arts",
+    "host": "Ballet Company at UCLA (@balletcompanyatucla)",
+    "description": "Ballet Company at UCLA's Nutcracker. Free tickets on Eventbrite (link in bio); bring a toy for their toy drive.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfbSJc3AHB8/"
+    ],
+    "sourceName": "Instagram @balletcompanyatucla (Graph API)",
+    "poster": "18044822000833744.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  },
+  {
+    "id": "ig-isu_ucla-garba",
+    "title": "ISU Garba",
+    "dates": [
+      "2026-11-14"
+    ],
+    "startTime": null,
+    "endTime": null,
+    "timeStatus": "tbd",
+    "placeId": "dickson",
+    "placeText": "Dickson Court North",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Indian Student Union (@isu_ucla)",
+    "description": "Indian Student Union's Garba night.",
+    "sourceUrls": [
+      "https://www.instagram.com/reel/DfT6GuMxAyb/"
+    ],
+    "sourceName": "Instagram @isu_ucla (Graph API)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-08"
+  }
+]
