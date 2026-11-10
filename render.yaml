@@ -1,0 +1,30 @@
+# This Blueprint creates a free Render web service. It does not create a database;
+# provide a Neon Free PostgreSQL connection string as DATABASE_URL when applying it.
+services:
+  - type: web
+    name: campus-corners-django
+    runtime: python
+    rootDir: server
+    region: oregon
+    plan: free
+    autoDeployTrigger: 'off'
+    buildCommand: pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --no-input
+    startCommand: gunicorn campus_corners.wsgi:application --bind 0.0.0.0:$PORT --workers 1
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.16"
+      - key: DATABASE_URL
+        sync: false
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_DEBUG
+        value: "false"
+      - key: DJANGO_SECURE_COOKIES
+        value: "1"
+      - key: DJANGO_SSL_REDIRECT
+        value: "1"
+      - key: DJANGO_ALLOWED_HOSTS
+        value: campus-corners.com,www.campus-corners.com
+      - key: DJANGO_CSRF_TRUSTED_ORIGINS
+        value: https://campus-corners.com,https://www.campus-corners.com

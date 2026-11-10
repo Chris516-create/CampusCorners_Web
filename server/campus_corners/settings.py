@@ -35,6 +35,19 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1", "::1"]
 ALLOWED_HOSTS.extend(
     host.strip() for host in os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",") if host.strip()
 )
+RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME", "").strip()
+if RENDER_EXTERNAL_HOSTNAME and RENDER_EXTERNAL_HOSTNAME not in ALLOWED_HOSTS:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+
+CSRF_TRUSTED_ORIGINS = [
+    origin.strip()
+    for origin in os.environ.get("DJANGO_CSRF_TRUSTED_ORIGINS", "").split(",")
+    if origin.strip()
+]
+if RENDER_EXTERNAL_HOSTNAME:
+    render_origin = f"https://{RENDER_EXTERNAL_HOSTNAME}"
+    if render_origin not in CSRF_TRUSTED_ORIGINS:
+        CSRF_TRUSTED_ORIGINS.append(render_origin)
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -88,7 +101,13 @@ if DATABASE_URL:
     try:
         import dj_database_url
 
-        DATABASES = {"default": dj_database_url.parse(DATABASE_URL, conn_max_age=60)}
+        DATABASES = {
+            "default": dj_database_url.parse(
+                DATABASE_URL,
+                conn_max_age=60,
+                ssl_require=not DEBUG,
+            )
+        }
         if DATABASES["default"].get("ENGINE") == "django.db.backends.sqlite3":
             raise ValueError("DATABASE_URL must point to PostgreSQL when it is configured.")
     except Exception as exc:
@@ -162,6 +181,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = "DENY"
 SECURE_REFERRER_POLICY = "same-origin"
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SECURE_SSL_REDIRECT = not DEBUG and os.environ.get("DJANGO_SSL_REDIRECT", "1") == "1"
 SECURE_HSTS_SECONDS = 0 if DEBUG else int(os.environ.get("DJANGO_HSTS_SECONDS", "0"))
 SECURE_HSTS_INCLUDE_SUBDOMAINS = False

@@ -345,6 +345,7 @@ function render(){
   $("recBtn").setAttribute("aria-expanded",S.recOpen);$("recBtn").hidden=!RECS.some(id=>{const e=EVENTS.find(x=>x.id===id);return e&&e.days.some(d=>d>=FROM)});
   ["tMap","tShuf","tMine"].forEach((id,i)=>$(id).setAttribute("aria-current",["map","shuffle","mine"][i]===S.tab));
   ["tMap","tShuf","tMine","tSet"].forEach((id,i)=>$(id).setAttribute("aria-current",["map","shuffle","mine","settings"][i]===S.tab));
+  $("tAccount").setAttribute("aria-current",S.tab==="account"?"true":"false");
   renderAccountFab();
   $("sparko").hidden=!S.tips||!sheet.hidden||S.tab!=="map"||S.view==="list"||!!(S.route&&S.mode==="events");
   emitCampusEvent("cc:render",{});
