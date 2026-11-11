@@ -61,12 +61,13 @@ section p{margin:0 0 8px;max-width:65ch}
 .expl-head{font-size:13px;color:var(--ink2);padding:0 2px}
 .expl-head b{color:var(--ink)}
 .main{flex:1;position:relative;overflow:hidden}
-.mapwrap{position:absolute;inset:0;background:#FFFFFF;overflow:hidden;touch-action:none}
+.mapwrap{position:absolute;inset:0;background:#f5f4ed;overflow:hidden;touch-action:none}
 .app.explore .mapwrap{background:#FFFFFF}
 .app.themed .mapwrap{background:#0B1437}
 
 .mapwrap svg{position:absolute;inset:0;width:100%;height:100%;cursor:grab;user-select:none;-webkit-user-select:none}
 .mapwrap svg.dragging{cursor:grabbing}
+.building-label{font-family:"Figtree",ui-sans-serif,system-ui,sans-serif;font-weight:700;fill:#3B3A3A;paint-order:stroke;stroke:#f5f4ed;stroke-linejoin:round;letter-spacing:.1px}
 
 .pin{cursor:pointer}.pin:focus{outline:none}.pin:focus-visible circle.ring{stroke:var(--ink);stroke-width:3}
 .floatbar{position:absolute;top:10px;left:10px;right:10px;display:flex;justify-content:flex-end;align-items:flex-start;gap:8px;z-index:6;pointer-events:none}
@@ -263,6 +264,7 @@ section p{margin:0 0 8px;max-width:65ch}
 .shend button{min-height:44px;border-radius:12px;border:0;background:var(--pdeep);color:#fff;font:700 13px var(--body);padding:0 18px;cursor:pointer}
 .shend button.ghost{background:var(--white);color:var(--ink)}
 .credit .hlkey{display:inline-block;width:10px;height:10px;border-radius:3px;background:#FF9E6B;border:1.5px solid #F0844F;vertical-align:-1px;margin-right:5px}
+.credit .hlkey.pink{background:#A92F61;border-color:#7F2149}
 @media (max-width:899px){#shuffle .shhead{padding-right:52px}}
 
 /* ---------- Oct 25 upgrade: logo badges, clubs, reviews, orange Explore, two-deck Shuffle ---------- */
