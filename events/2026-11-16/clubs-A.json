@@ -1,0 +1,1225 @@
+[
+  {
+    "id": "ig-aldpes-blood-donation-week",
+    "title": "UCLA Blood Donation Week",
+    "dates": [
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19",
+      "2026-11-20"
+    ],
+    "startTime": null,
+    "endTime": null,
+    "timeStatus": "tbd",
+    "placeId": null,
+    "placeText": "UCLA Health Blood & Platelet Center donor centers (by appointment)",
+    "locationStatus": "multiple",
+    "category": "community",
+    "host": "Alpha Lambda Delta Phi Eta Sigma (@uclaaldpes)",
+    "description": "ALD PES sponsors a week of blood donation with UCLA Health. Check eligibility and book an appointment at a donor center with the QR codes, then bring a photo ID and mention the organization.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfqinVkyLX9/"
+    ],
+    "sourceName": "Instagram @uclaaldpes (Graph API)",
+    "poster": "17919342444515942.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-gaa-dayne-weber-talk",
+    "title": "Guest Speaker: Dayne Weber (National Geographic)",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "16:00",
+    "endTime": "17:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Bunche 1221B",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Geography Association (@gaatucla)",
+    "description": "Talk by National Geographic's Dayne Weber on her work as a geographer and upcoming student opportunities at National Geographic.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfkaU2SS2Kx/"
+    ],
+    "sourceName": "Instagram @gaatucla (Graph API)",
+    "poster": "17995414362101794.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-aca-friends-family",
+    "title": "ACA All Day Friends and Family Showcase",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "21:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Lot 7",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "ACA All Day (@acaallday)",
+    "description": "The dance team shows off its fall quarter work. Flower grams for performers are $3 via the link in their bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfnPui_AcQb/"
+    ],
+    "sourceName": "Instagram @acaallday (Graph API)",
+    "poster": "18130785745857129.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-sps-schaeffer-talk",
+    "title": "SPS Professor Talk: Laboratory Astrophysics with Laser-Driven Plasmas",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "17:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "pab",
+    "placeText": "PAB 4-330",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Society of Physics Students (@spsucla)",
+    "description": "Professor Derek Schaeffer talks about his experimental plasma physics research, followed by Q&A and free pizza on the patio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfslViqS3is/"
+    ],
+    "sourceName": "Instagram @spsucla (Graph API)",
+    "poster": "17986985658106135.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-sps-transfer-social",
+    "title": "Physics & Astronomy Transfer Afternoon Social",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "15:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": "pab",
+    "placeText": "PAB 3rd Floor Patio",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Society of Physics Students (@spsucla)",
+    "description": "Coffee and snacks for transfer students with physics grad students and faculty, covering research opportunities, fields in physics and grad life. RSVP via the QR code on the poster.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfs_4O-xqPr/"
+    ],
+    "sourceName": "Instagram @spsucla (Graph API)",
+    "poster": "18006305010008382.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-cherrypop-umg-internship",
+    "title": "Music Industry Internship Workshop with Universal Music Group",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "18:30",
+    "endTime": "19:30",
+    "timeStatus": "confirmed",
+    "placeId": "publicaffairs",
+    "placeText": "Public Affairs 2250",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Cherry Pop Records (@cherrypoprecs)",
+    "description": "A Universal Music Group recruiter explains their hiring process and work culture and takes questions. Open to all UCLA students.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfvNx3hB9gx/"
+    ],
+    "sourceName": "Instagram @cherrypoprecs (Graph API)",
+    "poster": "18103751267649527.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-qcsa-banerjee-talk",
+    "title": "Speaker Event: Dr. Amartya Banerjee on ML-Based Electronic Structure Prediction",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "14:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "engr4",
+    "placeText": "Engineering IV Faraday Room (67-124)",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Quantum Computing Student Association at UCLA (@uclaqcsa)",
+    "description": "MSE Professor Amartya Banerjee talks about pairing Kohn-Sham DFT with machine learning to predict material behavior. Food provided; RSVP at forms.gle/wTfTTstueyKEJsRd8.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfsR6_HROAT/"
+    ],
+    "sourceName": "Instagram @uclaqcsa (Graph API)",
+    "poster": "18133234844502308.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-gaa-mapathon",
+    "title": "UCLA Mapathon (UC GIS Week)",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "16:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "yrl",
+    "placeText": "YRL Main Conference Room",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Geography Association (@gaatucla)",
+    "description": "Learn basic GIS and map for the Humanitarian OpenStreetMap Team, competing against students across the UC. Food provided; RSVP via the QR code on the poster.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfoKU7YG0Ww/"
+    ],
+    "sourceName": "Instagram @gaatucla (Graph API)",
+    "poster": "18149455762564785.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-bfs-run-lola-run",
+    "title": "BFS Meeting: Run Lola Run Screening",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "20:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "haines",
+    "placeText": "Haines A18",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Bruin Film Society (@bruinfilmsociety)",
+    "description": "Bruin Film Society's meeting is a screening of Run Lola Run.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfx3K6suSII/"
+    ],
+    "sourceName": "Instagram @bruinfilmsociety (Graph API)",
+    "poster": "18274528774306405.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-umsa-mathsgiving",
+    "title": "Mathsgiving BBQ (BAS x UMSA)",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "17:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Tipuana UA grills, 900 Weyburn Place",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "Undergraduate Mathematics Student Association (@umsaatucla)",
+    "description": "Thanksgiving-style grill-out with snacks for math students. Note the location changed to the Tipuana grills.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfngKnry3sR/"
+    ],
+    "sourceName": "Instagram @umsaatucla (Graph API)",
+    "poster": "18146900179716209.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-bcm-sawtelle-social",
+    "title": "BCM Sawtelle Social",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "18:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Sawtelle (restaurant not specified)",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "Bruin Chamber Musicians (@bruinchambermusicians)",
+    "description": "Dinner and dessert on Sawtelle for BCM members; the club drives everyone there. RSVP at the link in their bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/reel/DfqW-yRBsbo/"
+    ],
+    "sourceName": "Instagram @bruinchambermusicians (Graph API)",
+    "poster": "18114381185268853.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-stats-stand-hike",
+    "title": "STAND Hike to Franklin Canyon Park",
+    "dates": [
+      "2026-11-21"
+    ],
+    "startTime": null,
+    "endTime": null,
+    "timeStatus": "tbd",
+    "placeId": null,
+    "placeText": "Franklin Canyon Park",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "Statistics Club at UCLA (@statistics.ucla)",
+    "description": "Statistics Club's STAND committee hikes Franklin Canyon Park. RSVP at tinyurl.com/STANDHikeF26.",
+    "sourceUrls": [
+      "https://www.instagram.com/reel/DfoLvHJA3a0/"
+    ],
+    "sourceName": "Instagram @statistics.ucla (Graph API)",
+    "poster": "18202053649386926.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Caption gives the RSVP deadline as 11/26 @ 5pm, after the 11/21 hike date; one of the dates may be a typo."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-aiche-lunch-desouza",
+    "title": "Lunch with Professor De Souza",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "12:00",
+    "endTime": "13:00",
+    "timeStatus": "confirmed",
+    "placeId": "engr6",
+    "placeText": "Durga Malladi Suite, Engineering VI",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "American Institute of Chemical Engineers (@aicheatucla)",
+    "description": "Catered lunch with new CBE faculty member Professor Pedro de Souza to hear about his research and career paths. Spots are limited; RSVP early via the QR code.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfbcNWHhTU2/"
+    ],
+    "sourceName": "Instagram @aicheatucla (Graph API)",
+    "poster": "18000654783047216.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-bmes-holiday-party",
+    "title": "BMES Holiday Party: Aurora Borealis",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "timeStatus": "confirmed",
+    "placeId": "pauley",
+    "placeText": "Pauley Pavilion, Pavilion Club (M10B)",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Biomedical Engineering Society (@bmesucla)",
+    "description": "BMES end-of-quarter holiday party with Christmas games, activity booths and free food. Semi-formal dress; RSVP by Nov 19 at tinyurl.com/yc3tkzm6.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfsg7PFS4nh/"
+    ],
+    "sourceName": "Instagram @bmesucla (Graph API)",
+    "poster": "17971271418188656.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-bmes-scienceday-workshop",
+    "title": "Science Day Volunteer Workshop",
+    "dates": [
+      "2026-11-17",
+      "2026-11-18"
+    ],
+    "startTime": "18:30",
+    "endTime": "19:30",
+    "timeStatus": "confirmed",
+    "placeId": "engr5",
+    "placeText": "Engineering V 5101 (Tue) / Engineering V 5129 (Wed)",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Biomedical Engineering Society (@bmesucla)",
+    "description": "Mandatory workshop for BMES Science Day volunteers covering rotations, volunteer packets and assignments; same session offered Tuesday and Wednesday. RSVP at tinyurl.com/5du4ks4k.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfsh6lFSK6m/"
+    ],
+    "sourceName": "Instagram @bmesucla (Graph API)",
+    "poster": "18134309479743162.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-bmes-adenine-gamenight",
+    "title": "Adenine Game Night",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": "boelter",
+    "placeText": "Boelter Hall 6266S",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Biomedical Engineering Society (@bmesucla)",
+    "description": "Board games, snacks and hanging out with BMES. RSVP at tinyurl.com/AdenineGameNight.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfv-pqRpGiH/"
+    ],
+    "sourceName": "Instagram @bmesucla (Graph API)",
+    "poster": "18061910897560707.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-bmrs-alumni-panel",
+    "title": "BMRS Recent Alumni and Gap Year Panel",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "career",
+    "host": "Biomedical Research Society (@bmrs_ucla)",
+    "description": "Week 8 general meeting: panel of recent BMRS alumni on gap years and paths to medicine and research. Open to BMRS members only; submit questions via the Google form in the weekly email.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfvhiebhGup/"
+    ],
+    "sourceName": "Instagram @bmrs_ucla (Graph API)",
+    "poster": "18116893049175545.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-cbs-casb-alumni-panel",
+    "title": "CaSB Alumni & Industry Panel",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "17:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "158 Hershey Hall",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Computational Biologists’ Society (@compbiobruins)",
+    "description": "Evening with five Computational and Systems Biology alumni in industry, health and research, presented with the CaSB department. Submit questions for panelists via the Google form in the club's bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfsScQ7mznd/",
+      "https://www.instagram.com/p/DfT4PBptWSc/"
+    ],
+    "sourceName": "Instagram @compbiobruins (Graph API)",
+    "poster": "18124009691608419.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Room conflict: this post's caption and poster say 158 Hershey Hall, but the club's November calendar post says 153 Hershey Hall."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-lssa-labtour-green",
+    "title": "Research Lab Tour: Dr. Green's Lab",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "11:00",
+    "endTime": "12:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "academic",
+    "host": "Life Sciences Student Association (@lssaatucla)",
+    "description": "LSSA tour of Dr. Green's research lab to see the lab space and meet the professor. Limited capacity, first come first served; RSVP via the link on the post.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfXi9qOmKhi/"
+    ],
+    "sourceName": "Instagram @lssaatucla (Graph API)",
+    "poster": "18116385569194283.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-lssa-labtour-hoffmann",
+    "title": "Research Lab Tour: Dr. Hoffmann's Lab",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "11:00",
+    "endTime": "12:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "academic",
+    "host": "Life Sciences Student Association (@lssaatucla)",
+    "description": "LSSA tour of Dr. Hoffmann's research lab to see the lab space and meet the professor. Limited capacity, first come first served; RSVP via the link on the post.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfXi9qOmKhi/"
+    ],
+    "sourceName": "Instagram @lssaatucla (Graph API)",
+    "poster": "18116385569194283.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-lssa-labtour-cahill",
+    "title": "Research Lab Tour: Dr. Cahill's Lab",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "13:30",
+    "endTime": "14:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "academic",
+    "host": "Life Sciences Student Association (@lssaatucla)",
+    "description": "LSSA tour of Dr. Cahill's research lab to see the lab space and meet the professor. Limited capacity, first come first served; RSVP via the link on the post.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfXi9qOmKhi/"
+    ],
+    "sourceName": "Instagram @lssaatucla (Graph API)",
+    "poster": "18116385569194283.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-lssa-study-break",
+    "title": "Study, Create, and Connect: Midterm Study Break",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "18:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Boyer Hall 130",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "Life Sciences Student Association (@lssaatucla)",
+    "description": "Midterm study break with board games, painting and crafts while connecting with professors and peers. RSVP via the QR code on the post's second slide.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfnhEmvgTMX/"
+    ],
+    "sourceName": "Instagram @lssaatucla (Graph API)",
+    "poster": "17975604018193652.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-bfs-vc-gm",
+    "title": "Venture Capital General Meeting",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "18:30",
+    "endTime": "19:30",
+    "timeStatus": "confirmed",
+    "placeId": "kinsey",
+    "placeText": "Kinsey Pavilion Room 1200B",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Bruin Finance Society (@bruinfinance)",
+    "description": "Week 8 general meeting introducing venture capital: what VCs do, how deals are sourced and evaluated, and how to break into the industry.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfxxcG9ROvZ/"
+    ],
+    "sourceName": "Instagram @bruinfinance (Graph API)",
+    "poster": "18120961891805191.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Caption and poster both say 'Monday, November 9', but the post (published Nov 15) is titled 'Week 8 General Meeting'; Week 8 Monday is Nov 16. Date set to Nov 16; confirm with the club."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-bm-andrew-wang",
+    "title": "Guest Speaker: Andrew Wang (Disney)",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "rolfe",
+    "placeText": "Rolfe Hall 3108",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Bruin Marketers (@bruinmarketers)",
+    "description": "Talk and networking Q&A with UCLA alum Andrew Wang, Senior Data Analyst at Disney DTC. Business casual dress.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfs5MqixbQp/"
+    ],
+    "sourceName": "Instagram @bruinmarketers (Graph API)",
+    "poster": "18109979291354650.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Poster says 'Rofle Hall 3108' (typo); interpreted as Rolfe Hall 3108. Caption gives no date, time or place."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-brea-eastdil",
+    "title": "BREA x Eastdil Secured Information Session",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": "boelter",
+    "placeText": "Boelter Hall 5440",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Bruin Real Estate Association (@uclabrea)",
+    "description": "Info session with real estate investment bank Eastdil Secured Savills on capital markets and advisory work, with networking. Business casual; register via the link in BREA's bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfsfzC4y3CL/"
+    ],
+    "sourceName": "Instagram @uclabrea (Graph API)",
+    "poster": "18040120292904586.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-bsba-more-than-basketball",
+    "title": "BSBA x More Than Basketball Documentary Screening",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "19:15",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "anderson",
+    "placeText": "Crown Auditorium, Anderson School",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Bruin Sports Business Association (@uclabsba)",
+    "description": "Screening of the documentary 'More In Common: The \"Sportsploitation\" of Modern Society' by Arize, followed by a Q&A with Arize at 8 PM.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfngJeph3YI/"
+    ],
+    "sourceName": "Instagram @uclabsba (Graph API)",
+    "poster": "18347948788250609.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-grc-sustainability-panel",
+    "title": "Turning Research into Action: Sustainability Across Policy, Business & Science",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "franz",
+    "placeText": "Franz Hall 2258A",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Global Research and Consulting (@grcucla)",
+    "description": "Panel of environmental professionals on careers in ESG, climate and sustainability across academia, government and business. Bring your questions.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfsc5yByDQA/"
+    ],
+    "sourceName": "Instagram @grcucla (Graph API)",
+    "poster": "18090772973701667.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-ubs-office-hours",
+    "title": "UBS Office Hours (launch)",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": null,
+    "endTime": null,
+    "timeStatus": "tbd",
+    "placeId": null,
+    "placeText": "Online (video call)",
+    "locationStatus": "online",
+    "category": "career",
+    "host": "Undergraduate Business Society (@uclaubs)",
+    "description": "New weekly one-hour sessions with UBS board members for resume reviews, mock interviews and recruiting advice, open to all UCLA students. Submit questions in advance via the Google Form or drop in.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfs1KJYKkQq/"
+    ],
+    "sourceName": "Instagram @uclaubs (Graph API)",
+    "poster": "17957655273266341.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Caption says sessions are on Google Meet; poster says 'Virtually via Zoom'. No session time given."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-ubs-keybanc-info",
+    "title": "KeyBanc Capital Markets Investment Banking Info Session",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "19:00",
+    "endTime": "21:00",
+    "timeStatus": "confirmed",
+    "placeId": "dodd",
+    "placeText": "Dodd Hall 121",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Undergraduate Business Society (@uclaubs)",
+    "description": "Info session with KeyBanc's San Francisco tech investment banking team, aimed at sophomores (class of 2029) interested in Summer 2028 internships. Business professional; register at forms.gle/wHwqe4PwttAFfEtr8.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfxGkIQquWw/"
+    ],
+    "sourceName": "Instagram @uclaubs (Graph API)",
+    "poster": "18002645745042186.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-asu-nolan-wells-walkout",
+    "title": "Say His Name: Nolan Wells Walkout",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "12:00",
+    "endTime": "14:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Meyerhoff Park",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Afrikan Student Union (@blackbruins)",
+    "description": "Afrikan Student Union walkout in solidarity with Nolan Wells and his family, calling for justice, transparency and accountability.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfk5c61Ei8K/"
+    ],
+    "sourceName": "Instagram @blackbruins (Graph API)",
+    "poster": "18038732417845130.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-asa-movie-night",
+    "title": "All-ASA & UCLA ASA Movie Night: Kyanq U Kriv",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "19:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "publicaffairs",
+    "placeText": "Luskin School of Public Affairs, Room 2214",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Armenian Students’ Association (@ucla_asa)",
+    "description": "Free screening of Kyanq U Kriv in honor of Artsakh Awareness Month. Suggested parking: Parking Structure 3.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfno35hBHd4/"
+    ],
+    "sourceName": "Instagram @ucla_asa (Graph API)",
+    "poster": "18123548320942703.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-isu-rivalry-fundrager",
+    "title": "ISU Rivalry Fundrager",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "21:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "TrapHouse, 528 Midvale",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "Indian Student Union (@isu_ucla)",
+    "description": "Rivalry-themed fundraiser party hosted by ISU. Presale tickets ($4 members, $8 non-members) via Venmo @ISUFUNDRAGER; presale ends Wednesday Nov 18.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfyM5oJhdfy/"
+    ],
+    "sourceName": "Instagram @isu_ucla (Graph API)",
+    "poster": "18184305745438210.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-asme-canes-fundraiser",
+    "title": "ASME Raising Cane's Fundraiser",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "16:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Raising Cane's, 1008 Broxton Ave, Los Angeles, CA 90024",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "American Society of Mechanical Engineers (@asmebruins)",
+    "description": "Raising Cane's donates 15% of net sales to ASME at UCLA. Mention the fundraiser at checkout or use code RCFUND96 for online/app orders.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfiTEkWPpo9/"
+    ],
+    "sourceName": "Instagram @asmebruins (Graph API)",
+    "poster": "18096860474174522.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-acmstudio-workshop6",
+    "title": "Game Dev Workshop 6: Items and Animations",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "mathsci",
+    "placeText": "Mathematical Sciences 6229",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Game Dev Studio (@acmstudio.ucla)",
+    "description": "Unity workshop on animating assets and enemy pathfinding while extending the club's Zelda-like project.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfnXMoWyS8g/"
+    ],
+    "sourceName": "Instagram @acmstudio.ucla (Graph API)",
+    "poster": "18021629867737017.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-nsu-newbie-pickleball",
+    "title": "NSU Newbie: Pickleball",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": null,
+    "endTime": null,
+    "timeStatus": "tbd",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "sports",
+    "host": "Nikkei Student Union (@ucla_nsu)",
+    "description": "Newbie pickleball event from NSU's November calendar; time and place not posted yet.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfYL2wiRqqt/"
+    ],
+    "sourceName": "Instagram @ucla_nsu (Graph API)",
+    "poster": "18099926009558238.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-devx-roblox-panel",
+    "title": "Roblox at UCLA Builder Panel",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "19:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "dodd",
+    "placeText": "Dodd Hall 121",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "DevX (@ucladevx)",
+    "description": "Alumni panel and Q&A on working at Roblox as a software engineer, co-hosted by DevX, ACM Hack and Roblox, with free food and swag. RSVP via the link in bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfkyS2fEgTE/"
+    ],
+    "sourceName": "Instagram @ucladevx (Graph API)",
+    "poster": "18134455432748540.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-swe-accenture-info",
+    "title": "Q&A with Accenture",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:30",
+    "timeStatus": "confirmed",
+    "placeId": "engr4",
+    "placeText": "Engineering IV Room 57-124 (Maxwell Room)",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Society of Women Engineers (@swe.ucla)",
+    "description": "Info session with Accenture, which is hiring students with strong technical skills. RSVP at tinyurl.com/AccenturexSWE2026 or the link in bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfnAZsepahe/"
+    ],
+    "sourceName": "Instagram @swe.ucla (Graph API)",
+    "poster": "18120257911783717.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-swe-linkedin-headshots",
+    "title": "SWE LinkedIn Headshots",
+    "dates": [
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19"
+    ],
+    "startTime": "13:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": "royce",
+    "placeText": "Royce Hall",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Society of Women Engineers (@swe.ucla)",
+    "description": "Free professional headshots with a Royce Hall backdrop for SWE members only (membership checked), first come first served. Nov 18 runs 1-3 PM; sign up via the link in bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfsCeV6ppfy/"
+    ],
+    "sourceName": "Instagram @swe.ucla (Graph API)",
+    "poster": "18037906805899040.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Caption gives 1-4 PM but 1-3 PM on Nov 18; poster lists no times.",
+      "Place taken from 'signature UCLA Royce Hall headshot'; exact meeting spot not stated."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-nsbe-study-night",
+    "title": "NSBE x BBSA x Melanin & Medicine Study Night",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "17:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "BBRC (Black Bruin Resource Center)",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "National Society of Black Engineers (@uclansbe)",
+    "description": "Collab study night before finals; bring notes and study buddies. Food and drinks provided.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfyLyNVNcGL/"
+    ],
+    "sourceName": "Instagram @uclansbe (Graph API)",
+    "poster": "18005287016796254.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-mesa-networking-night",
+    "title": "MENA Networking Night",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "18:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "kerckhoff",
+    "placeText": "Kerckhoff Grand Salon",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Middle Eastern Student Association (@uclamesa)",
+    "description": "Connect with professionals and explore career opportunities, hosted by MESA with SOS, LSA, SASA and JAA. RSVP via the link in bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfh8PRCvKG3/"
+    ],
+    "sourceName": "Instagram @uclamesa (Graph API)",
+    "poster": "18092730257231234.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-nsu-sawtelle-run",
+    "title": "NSU GM: Sawtelle Run",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": null,
+    "endTime": null,
+    "timeStatus": "tbd",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "community",
+    "host": "Nikkei Student Union (@ucla_nsu)",
+    "description": "NSU general meeting outing listed on the November calendar; time and meeting place not posted yet.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfYL2wiRqqt/"
+    ],
+    "sourceName": "Instagram @ucla_nsu (Graph API)",
+    "poster": "18099926009558238.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-crux-research-panel",
+    "title": "CruX Neurotech Research Panel",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "18:30",
+    "endTime": "19:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Neuroscience Research Building 132",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "CruX (@cruxucla)",
+    "description": "Panel with neurotech experts and professors (Drs. Ladan Shams, Ahmet Arac, Lindy Comstock); free food and drinks. RSVP at forms.gle/Q6hDnF1pTtPPKf7GA.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfvJPF-Td6e/"
+    ],
+    "sourceName": "Instagram @cruxucla (Graph API)",
+    "poster": "17956029258289146.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-ieee-run-social",
+    "title": "HKN x WATT x IEEE Run Social",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "07:00",
+    "endTime": "09:00",
+    "timeStatus": "confirmed",
+    "placeId": "engr4",
+    "placeText": "Engineering IV Patio",
+    "locationStatus": "confirmed",
+    "category": "sports",
+    "host": "IEEE at UCLA (@uclaieee)",
+    "description": "Group stretch then a 2 or 3 mile run with paced groups and a walking group; drinks and Porto's after. RSVP in bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfVb9fQh5cN/"
+    ],
+    "sourceName": "Instagram @uclaieee (Graph API)",
+    "poster": "17998215588061274.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-ieee-kbbq-social",
+    "title": "IEEE KBBQ Social at Meat Love",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "18:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Meat Love, 1145 S Western Ave, Los Angeles",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "IEEE at UCLA (@uclaieee)",
+    "description": "All-you-can-eat KBBQ social (about $35, not subsidized). RSVP by Nov 12 via the link in bio; let the club know if you can drive.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfVc9NXBILX/"
+    ],
+    "sourceName": "Instagram @uclaieee (Graph API)",
+    "poster": "18088213595315818.jpg",
+    "status": "scheduled",
+    "conflicts": [
+      "Caption says the group leaves for Meat Love at 6 PM; poster lists 6:00 PM at Meat Love. Unclear if 6 PM is departure or start, and no departure point is given."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-samahang-karaoke-fundraiser",
+    "title": "Samahang Pilipino Karaoke Fundraiser (Week 8 GM)",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "haines",
+    "placeText": "Haines Hall A18",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Samahang Pilipino (@samahangpilipino)",
+    "description": "Karaoke GM raising money for flood and typhoon relief in the Philippines through NAFCON's Bayanihan program. Nominate someone to sing ($2-$10) or match the price to skip.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfnTFEIhz4f/"
+    ],
+    "sourceName": "Instagram @samahangpilipino (Graph API)",
+    "poster": "18139805491727846.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-vsu-backstage-bakery",
+    "title": "VCN 47 Drama Backstage Bakery Pop-up",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "11:00",
+    "endTime": "15:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "516 Glenrock Ave., Unit 210",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "Vietnamese Student Union (@vsubruins)",
+    "description": "Bake sale cafe pop-up supporting the VCN Drama cast, with tiramisu, mochi, brownies and more ($3-$5).",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfx93XUGhq1/"
+    ],
+    "sourceName": "Instagram @vsubruins (Graph API)",
+    "poster": "18392421238239407.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-openorigins-hammer-trip",
+    "title": "Open Origins Hammer Museum Field Trip",
+    "dates": [
+      "2026-11-21"
+    ],
+    "startTime": "10:40",
+    "endTime": "14:30",
+    "timeStatus": "confirmed",
+    "placeId": "hammer",
+    "placeText": "Hammer Museum (meet at De Neve Turnaround at 10:40 AM)",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Open Origins @ UCLA (@openorigins)",
+    "description": "Group trip to see Hammer Museum exhibits including Huguette Caland and Felipe Baeza; meet at De Neve Turnaround, back on the Hill by 2:30 PM. Fill out the RSVP form first.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/DfsHg-Gj6-X/"
+    ],
+    "sourceName": "Instagram @openorigins (Graph API)",
+    "poster": "18130900400309588.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  },
+  {
+    "id": "ig-tsa-thanksgiving-potluck",
+    "title": "TSA Thanksgiving Potluck",
+    "dates": [
+      "2026-11-21"
+    ],
+    "startTime": "11:00",
+    "endTime": "13:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Hitch Kitchen",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Taiwanese Student Association (@ucla.tsa)",
+    "description": "Thanksgiving potluck with a team chicken-eating contest. $10 members, $15 non-members, free if you bring a dish for 20-30 people; RSVP in bio.",
+    "sourceUrls": [
+      "https://www.instagram.com/p/Dfx4TRBACQc/"
+    ],
+    "sourceName": "Instagram @ucla.tsa (Graph API)",
+    "poster": "18132240995313663.jpg",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-16"
+  }
+]
