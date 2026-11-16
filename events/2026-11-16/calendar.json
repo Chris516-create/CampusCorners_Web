@@ -1,0 +1,1377 @@
+[
+  {
+    "id": "ucla-84c2bb4f",
+    "title": "Money Matters Monday: Personal Finance Activities",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "11:00",
+    "endTime": "15:00",
+    "timeStatus": "confirmed",
+    "placeId": "careercenter",
+    "placeText": "Strathmore 106",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "UCLA Financial Wellness",
+    "description": "Drop in for personal finance chats, games and worksheets.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/84c2bb4f-3d06-48ae-bbdc-dd0ce64dd606"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-c6926c80",
+    "title": "Jonathan Hepfer, Percussionist: \"Sisyphus as Artist\"",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "15:00",
+    "endTime": "17:00",
+    "timeStatus": "confirmed",
+    "placeId": "music",
+    "placeText": "Schoenberg Music Building, Room 1344",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Modal Interchange series, UCLA Center for Musical Humanities",
+    "description": "Second workshop in the series on building a life as a working artist.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/c6926c80-f531-5f9d-830a-5273e9526561"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-e10d645c",
+    "title": "Hogarth's Lost Annotations",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "16:00",
+    "endTime": "17:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "William Andrews Clark Memorial Library",
+    "locationStatus": "offcampus",
+    "category": "academic",
+    "host": "Center for 17th- & 18th-Century Studies",
+    "description": "Talk on a long-lost volume annotated by the artist William Hogarth.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/e10d645c-12f4-4d16-b3ad-b0a7966e1b48"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-d52cddd4",
+    "title": "Town Hall with the Graduate Division Dean",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "17:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "academic",
+    "host": "Graduate and Professional Student Alumni Network (GPSA)",
+    "description": "Online town hall with the Graduate Division dean, with time for audience questions.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/d52cddd4-56ef-5759-ae89-5db956700998"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-fb92d7a0",
+    "title": "Rose Lombardo, Flute: Masterclass",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "18:30",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "arts",
+    "host": "UCLA Herb Alpert School of Music",
+    "description": "Flute masterclass with the San Diego Symphony's principal flutist.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/fb92d7a0-e00b-56dc-861f-6307265836be"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-69f09b3c",
+    "title": "Fall Graduate Composers Concert",
+    "dates": [
+      "2026-11-16"
+    ],
+    "startTime": "19:30",
+    "endTime": "21:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "arts",
+    "host": "UCLA Herb Alpert School of Music",
+    "description": "Concert of new works by UCLA graduate composition students.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/69f09b3c-3289-5e63-a0f2-4d870ce3b09f"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-360c420d",
+    "title": "Financial Wellness Undergraduate Drop-Ins",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "09:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "wellness",
+    "host": "UCLA Financial Wellness",
+    "description": "Quick drop-in help with money questions for undergraduates.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/360c420d-6f1b-41ac-bd6f-c105b97a6c83"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-19fc19ca",
+    "title": "To Prompt or Not to Prompt",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "timeStatus": "confirmed",
+    "placeId": "murphy",
+    "placeText": "DataX Impact Forum, 3312 Murphy Hall",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "DataX",
+    "description": "Interactive workshop on the pros and cons of AI; you draft your own AI code of conduct.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/19fc19ca-6b85-4077-a8b4-d79dc14e704d"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-1c0abc91",
+    "title": "Bruin MindFit: In-Person Workshop",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "12:15",
+    "endTime": "13:00",
+    "timeStatus": "confirmed",
+    "placeId": "dicksons",
+    "placeText": "Dickson Court South",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "UCLA Recreation",
+    "description": "Outdoor mindful movement and grounding session.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/1c0abc91-2c21-4685-bc31-3cf3d9d4f9b1"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-d3a5b1ec",
+    "title": "Movement and Meditation",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "13:15",
+    "endTime": "14:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "RISE Center, LuValle Commons (basement level)",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "RISE Center",
+    "description": "Guided movement and meditation.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/d3a5b1ec-c152-486d-b83e-6445ec55ee08"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-0efd00f1",
+    "title": "Student Legal Services Drop-In Hours at the GSRC",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "15:00",
+    "endTime": "16:30",
+    "timeStatus": "confirmed",
+    "placeId": "sac",
+    "placeText": "Graduate Student Resource Center, SAC B11",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "Student Legal Services and Graduate Student Resource Center",
+    "description": "Drop-in legal help for graduate students on housing, jobs and contracts.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/0efd00f1-d51c-48a2-8856-042051264ccc",
+      "https://community.ucla.edu/event/f07c292d-3a3f-4444-8d2a-ad5f4db3cf44"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-172efe4d",
+    "title": "Stacks Xchange: Black Feminist Epistemology and Critical Cataloging",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "15:30",
+    "endTime": "17:00",
+    "timeStatus": "confirmed",
+    "placeId": "murphy",
+    "placeText": "DataX, 3312 Murphy Hall",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "DataX",
+    "description": "Talk on applying Black feminist theory to ethical library cataloging.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/172efe4d-0c3f-4a54-bfae-cb1f60455309"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-49217058",
+    "title": "Legal Gender/Name Change Clinic and Resource Fair",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "16:30",
+    "endTime": "18:30",
+    "timeStatus": "confirmed",
+    "placeId": "sac",
+    "placeText": "LGBTQ Campus Resource Center (Student Activities Center)",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "LGBTQ Campus Resource Center",
+    "description": "Attorney clinic 4:30–5:30, then a gender-affirming care giveaway 5:30–6:30.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/49217058-cc12-441f-8e15-dc4c584eeedb"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-b04837f0",
+    "title": "Colors and Connection",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "RISE Center, LuValle Commons (basement level)",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "RISE Center with Project UnLonely",
+    "description": "Creative art workshop about connecting with others.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/b04837f0-11c0-4170-80f4-e1846fd31622"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-01391dd5",
+    "title": "Contenders Night 6: Possible Love",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "19:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "hammer",
+    "placeText": "Hammer Museum",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Hammer Museum",
+    "description": "Screening of Lee Chang-dong's Korean drama about class and connection, with the director in person.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/01391dd5-6f25-48cf-b042-fb9a425bb391"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-8caf3f83",
+    "title": "UCLA Women's Volleyball vs. USC",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "19:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "pauley",
+    "placeText": "Pauley Pavilion",
+    "locationStatus": "confirmed",
+    "category": "sports",
+    "host": "UCLA Athletics and UCLA Alumni Association",
+    "description": "Rivalry match at Pauley; it's also Alumni Appreciation Day, with discounted alumni tickets.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/8caf3f83-4596-56f8-abe3-e0f091f734fe"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-8a12fb69",
+    "title": "The Radif of Iranian Music on the Narm-Nāy",
+    "dates": [
+      "2026-11-17"
+    ],
+    "startTime": "20:00",
+    "endTime": "21:30",
+    "timeStatus": "confirmed",
+    "placeId": "music",
+    "placeText": "Lani Hall, Schoenberg Music Building",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Gramian-Emrani Center for Iranian Music, School of Music",
+    "description": "Concert and lecture by Maestro Khosrow Soltani on preserving Iranian classical music.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/8a12fb69-5d1a-5ca6-8ca4-8927cddcd504",
+      "https://schoolofmusic.ucla.edu/events/"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-ab7414f4",
+    "title": "GSRC Case Management Drop-In (Virtual)",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Online",
+    "locationStatus": "online",
+    "category": "wellness",
+    "host": "Graduate Student Resource Center",
+    "description": "Virtual drop-in for graduate students to talk through options and next steps.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/ab7414f4-868e-4dae-892a-133f56c0f13f"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-8aa95b0f",
+    "title": "Fall English Language Circle (In Person)",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "12:00",
+    "endTime": "13:00",
+    "timeStatus": "confirmed",
+    "placeId": "bradley",
+    "placeText": "Dashew Center, Bradley Hall 106",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Dashew Center for International Students and Scholars",
+    "description": "English conversation practice; limited to 20 people.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/8aa95b0f-12bb-4199-a956-3d4e16b20b30"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-81fb940a",
+    "title": "An Introduction to Music Industry Databases",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "academic",
+    "host": "UCLA Library",
+    "description": "Workshop on research databases for music industry data and media.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/81fb940a-3561-4930-bfdd-29b22fa2f0f9"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-c90ea4b2",
+    "title": "Financial Wellness Undergraduate Drop-Ins",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "13:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "wellness",
+    "host": "UCLA Financial Wellness",
+    "description": "Quick drop-in help with money questions for undergraduates.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/c90ea4b2-633b-4b17-9b91-1a48a783da43"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-c2f7c898",
+    "title": "Fall OPT Webinar (for F-1 Students)",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "career",
+    "host": "Dashew Center for International Students and Scholars",
+    "description": "Weekly webinar on Optional Practical Training work authorization for F-1 students.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/c2f7c898-17a9-4cf8-af32-1ca7745cb1b0"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-92cb9d61",
+    "title": "Undergraduate Research Center–Sciences Office Hours",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "timeStatus": "confirmed",
+    "placeId": "lifesci",
+    "placeText": "Life Sciences Building, Room 2120",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Undergraduate Research Center – Sciences",
+    "description": "Ask about research opportunities and grad school prep.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/92cb9d61-b0f4-4fa1-98b1-d37ba7fffcc7"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-858eed67",
+    "title": "Resilience & Renewal",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "16:00",
+    "endTime": "17:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "RISE Center, LuValle Commons (basement level)",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "RISE Center",
+    "description": "Community club on resilience and self-care.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/858eed67-27ae-457b-a0a9-5127bb7665fa"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-30db476c",
+    "title": "International Community Updates",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "16:00",
+    "endTime": "17:30",
+    "timeStatus": "confirmed",
+    "placeId": "deneve",
+    "placeText": "De Neve Plaza Room",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Student Legal Services and Dashew Center",
+    "description": "International Education Week: updates on immigration-related policies, then socializing. Registration recommended.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/30db476c-31af-4e47-a66d-441b82d36fa5",
+      "https://community.ucla.edu/event/627a9b3d-a9e4-4040-b924-ab77c68f7ee5"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-a10179af",
+    "title": "Dissertation 101",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "17:15",
+    "endTime": "18:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "academic",
+    "host": "Graduate Writing Center",
+    "description": "Overview of how a dissertation is structured and written. RSVP on the event page.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/a10179af-2384-4515-bd0e-65366c3dfafb"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-2e6d5f7d",
+    "title": "Alumni Mentor Program: Networking Night",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "18:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "jwac",
+    "placeText": "James West Alumni Center, Collins Conference Room",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "UCLA Alumni Mentor Program",
+    "description": "Speed networking, mentor meetups and reverse mentoring with alumni.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/2e6d5f7d-c1f4-5d9f-8e16-16b9ff833220"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-9a6a2151",
+    "title": "More Work, My Work!",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Transfer Student Center",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "Bruin Resource Center / Students with Dependents Program",
+    "description": "Peer-led guide to getting into research and contacting faculty. Dinner provided.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/9a6a2151-8068-4625-8ebe-42d9e2c79afa"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-2bebcf4f",
+    "title": "Archive Talks: Trouble in Paradise",
+    "dates": [
+      "2026-11-18"
+    ],
+    "startTime": "19:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "hammer",
+    "placeText": "Billy Wilder Theater (Hammer Museum)",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "UCLA Film & Television Archive",
+    "description": "Screening with a film historian's talk; book signing at 6:30.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/2bebcf4f-87eb-4b57-9339-d21e10e85c02"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-3a4c71e8",
+    "title": "Financial Wellness Undergraduate Drop-Ins",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "11:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "wellness",
+    "host": "UCLA Financial Wellness",
+    "description": "Quick drop-in help with money questions for undergraduates.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/3a4c71e8-e625-46f5-84f8-1180fa0fcab5"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-1ef24aaa",
+    "title": "Fuel Up at Thanksgiving",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "11:30",
+    "endTime": "14:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "580 Cafe",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Graduate Student Resource Center",
+    "description": "Friendsgiving-style food and community for grad students. RSVP on the event page.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/1ef24aaa-f5c7-4879-beef-f511d985583f"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-e1a5d67e",
+    "title": "TFT Reads: Sexual Citizens",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "12:00",
+    "endTime": "13:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Little Theater, Macgowan Hall",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "School of Theater, Film and Television with CARE",
+    "description": "Talk with author Shamus Khan and a panel on sexual assault on campus. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/e1a5d67e-bf10-4dee-8cd4-d00a7c700543"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-eb511402",
+    "title": "Food Studies Resources at UCLA Library and Beyond",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "13:00",
+    "endTime": "14:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "academic",
+    "host": "UCLA Library",
+    "description": "Intro to research resources for food studies. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/eb511402-021e-4ba3-a634-5035003f330f"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-1bf98f4a",
+    "title": "CARE Cafe",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "13:00",
+    "endTime": "15:00",
+    "timeStatus": "confirmed",
+    "placeId": "rieber",
+    "placeText": "RISE @ Rieber Hall",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "CARE Program",
+    "description": "Drop-in peer conversations about relationships, consent and wellbeing.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/1bf98f4a-a62c-4872-9d49-b85b0f5718dd"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-60667576",
+    "title": "Book Launch: \"Seeing Like a Supply Chain\" by Miriam Posner",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": "murphy",
+    "placeText": "DataX, 3312 Murphy Hall",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "DataX",
+    "description": "Launch of a book on supply-chain technology and labor. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/60667576-a5dc-4265-8125-07df88b20045"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-49052e8a",
+    "title": "By Manager Request: Surveillance and Mobility in Early Public Housing",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "16:00",
+    "endTime": "17:30",
+    "timeStatus": "confirmed",
+    "placeId": "kaplan",
+    "placeText": "Kaplan Hall, Room 193",
+    "locationStatus": "confirmed",
+    "category": "academic",
+    "host": "African American Studies",
+    "description": "Prentiss Dantzler on how housing managers shaped who stayed in public housing.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/49052e8a-75b4-4e75-ba2c-cd7d9667ca99"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [
+      "Calendar title reads \"The Impact of od Surveillance\" (a word seems missing); shortened here."
+    ],
+    "needsReview": true,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-67439222",
+    "title": "Become the Next Best Version of You",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "RISE Center, LuValle Commons (basement level)",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "RISE Center",
+    "description": "Neurodiversity workshop on self-compassion and self-management skills.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/67439222-91a8-495d-adf3-4e00f658cc2a"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-03443610",
+    "title": "RA Info Session",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:00",
+    "timeStatus": "confirmed",
+    "placeId": "nwaud",
+    "placeText": "Northwest Campus Auditorium",
+    "locationStatus": "confirmed",
+    "category": "career",
+    "host": "Residential Life",
+    "description": "Learn about becoming a Resident Assistant.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/03443610-8ab7-4867-be0e-e47b96b49361"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-69905389",
+    "title": "A Conversation with Gabriel Prokofiev: Minimoogs, Turntables & Orchestras",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "18:00",
+    "endTime": "20:30",
+    "timeStatus": "confirmed",
+    "placeId": "music",
+    "placeText": "Lani Hall, Schoenberg Music Building",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "UCLA Herb Alpert School of Music",
+    "description": "Panel, Minimoog demo and Q&A about a concerto for synthesizer.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/69905389-7a5f-55cb-890f-0ed9a6080048",
+      "https://schoolofmusic.ucla.edu/events/"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-4565ded6",
+    "title": "Loy Krathong Festival",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "19:00",
+    "endTime": "21:00",
+    "timeStatus": "confirmed",
+    "placeId": "fountain",
+    "placeText": "Inverted Fountain",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Department of Ethnomusicology",
+    "description": "Thai music, dance and crafts, with candle-lotus floats.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/4565ded6-0e78-5cd3-a104-222f21e45276"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-ded7bc75",
+    "title": "Contenders Night 7: The Invite",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "19:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "hammer",
+    "placeText": "Hammer Museum",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Hammer Museum",
+    "description": "Screening of Olivia Wilde's dark comedy about a dinner party gone wrong.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/ded7bc75-03ef-491b-b697-e2316da62d19"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-0ec37ada",
+    "title": "Concerts on the Hill",
+    "dates": [
+      "2026-11-19"
+    ],
+    "startTime": "20:00",
+    "endTime": "22:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Sunset Plaza Stage",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Residential Life",
+    "description": "Live music on the Hill.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/0ec37ada-2815-4c1c-a1bc-c2ef040ac2f3"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-39ccac4e",
+    "title": "Financial Wellness Undergraduate Drop-Ins",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "09:00",
+    "endTime": "15:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "wellness",
+    "host": "UCLA Financial Wellness",
+    "description": "Quick drop-in help with money questions for undergraduates.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/39ccac4e-8ce3-438c-9a92-3f1c9c781d98"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-92924bdb",
+    "title": "Mindful Writing Session",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "10:00",
+    "endTime": "12:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Zoom",
+    "locationStatus": "online",
+    "category": "academic",
+    "host": "Graduate Writing Center",
+    "description": "Mindfulness-based writing time; bring a current project. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/92924bdb-9568-4e8b-9054-848ddf1e39ab"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-1a57d008",
+    "title": "Jam Session with the Herbie Hancock Institute Ensemble",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "14:00",
+    "endTime": "16:00",
+    "timeStatus": "confirmed",
+    "placeId": "music",
+    "placeText": "Walter H. Rubsamen Music Library",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "UCLA Library",
+    "description": "Ensemble set followed by an open jam. No RSVP needed.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/1a57d008-b364-4fbc-b32b-1e860fa2dfc0"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-7364ec3d",
+    "title": "Trans Day of Remembrance Trip to the LA LGBT Center Concert",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "17:00",
+    "endTime": "21:30",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "LA LGBT Center, The Village at Ed Gould Plaza (Renberg Theatre)",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "LGBTQ Campus Resource Center",
+    "description": "Departs 5:30. Transportation and tickets for confirmed attendees; RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/7364ec3d-e67a-43b0-ba41-38d231d8953b"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-bd2e4df2",
+    "title": "Tote Bag Painting & MyChart Workshop",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": "bradley",
+    "placeText": "Bradley International Hall #300",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "Residential Life",
+    "description": "Short MyChart health talk, then tote bag painting.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/bd2e4df2-bd62-4909-af15-1c03bc844acf"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-24855934",
+    "title": "Men's Ice Hockey vs. Grand Canyon University",
+    "dates": [
+      "2026-11-20"
+    ],
+    "startTime": "21:45",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "LA Kings Ice, Reseda",
+    "locationStatus": "offcampus",
+    "category": "sports",
+    "host": "UCLA Club Sports (Ice Hockey)",
+    "description": "Club ice hockey home game.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/24855934-98cf-53c6-b843-ca903395e29a"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-03813849",
+    "title": "Guided Garden Tour",
+    "dates": [
+      "2026-11-21"
+    ],
+    "startTime": "10:00",
+    "endTime": "11:00",
+    "timeStatus": "confirmed",
+    "placeId": "botany",
+    "placeText": "La Kretz Garden Pavilion, 707 Tiverton Drive",
+    "locationStatus": "confirmed",
+    "category": "community",
+    "host": "Mathias Botanical Garden",
+    "description": "Free tour on the stories behind selected plants.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/03813849-3945-4dee-ad64-e722f4a4caa0"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-c038046d",
+    "title": "Water-Wise Gardening Workshop",
+    "dates": [
+      "2026-11-21"
+    ],
+    "startTime": "10:00",
+    "endTime": "11:30",
+    "timeStatus": "confirmed",
+    "placeId": "sunsetrec",
+    "placeText": "jane b semel HCI Community Garden (Sunset Canyon Recreation Center)",
+    "locationStatus": "confirmed",
+    "category": "wellness",
+    "host": "Semel Healthy Campus Initiative Center",
+    "description": "How to design a drought-tolerant garden for Southern California. RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/c038046d-7954-4a1d-a7a4-42ca9bb60ae3"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-f9ee8bdb",
+    "title": "Santa Monica Transit Trip",
+    "dates": [
+      "2026-11-21"
+    ],
+    "startTime": "12:00",
+    "endTime": "17:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "community",
+    "host": "Graduate Student Resource Center",
+    "description": "Free transit trip to Santa Monica beach and 3rd Street Promenade for grad students, lunch included. Set up your Grad Pass and RSVP.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/f9ee8bdb-de21-407d-88a5-278ada0eb891"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-f75a1647",
+    "title": "Pilipino Alumni Association x Tinig Showcase",
+    "dates": [
+      "2026-11-21"
+    ],
+    "startTime": "17:00",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "jwac",
+    "placeText": "James West Alumni Center",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "UCLA Pilipino Alumni Association",
+    "description": "Musical showcase celebrating Filipino culture.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/f75a1647-f8e5-54b4-bdf3-18d4eeb2b4b8"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-91236a63",
+    "title": "Music of China, Fall Concert",
+    "dates": [
+      "2026-11-21"
+    ],
+    "startTime": "17:00",
+    "endTime": "21:00",
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "Not listed",
+    "locationStatus": "tbd",
+    "category": "arts",
+    "host": "UCLA Herb Alpert School of Music",
+    "description": "Annual concert of the UCLA Chinese Music Ensemble, directed by Chi Li.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/91236a63-784f-5841-ba04-071276afd28c"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-091c4534",
+    "title": "Men's Ice Hockey vs. Grand Canyon University",
+    "dates": [
+      "2026-11-21"
+    ],
+    "startTime": "18:45",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": null,
+    "placeText": "LA Kings Ice, Reseda",
+    "locationStatus": "offcampus",
+    "category": "sports",
+    "host": "UCLA Club Sports (Ice Hockey)",
+    "description": "Second club ice hockey game of the weekend.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/091c4534-ec65-539d-be46-8fd41051ac52"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-ec5a634c",
+    "title": "60th Anniversary Screening: Hollywood Squares",
+    "dates": [
+      "2026-11-21"
+    ],
+    "startTime": "19:30",
+    "endTime": null,
+    "timeStatus": "confirmed",
+    "placeId": "hammer",
+    "placeText": "Billy Wilder Theater (Hammer Museum)",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "UCLA Film & Television Archive",
+    "description": "Two episodes and a clip reel, then a Q&A with guests.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/ec5a634c-9c90-4fef-abb8-119087ec92ac"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-46d5759a",
+    "title": "Paint the Town Blue",
+    "dates": [
+      "2026-11-22"
+    ],
+    "startTime": null,
+    "endTime": null,
+    "timeStatus": "tbd",
+    "placeId": null,
+    "placeText": "Westwood Village",
+    "locationStatus": "offcampus",
+    "category": "community",
+    "host": "UCLA Alumni Affairs",
+    "description": "Rivalry week starts: Westwood shops and homes go blue and gold through Nov 28. Share photos with #BEATSC.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/46d5759a-b8c2-5f11-937e-7fce7f9c9c19"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  },
+  {
+    "id": "ucla-40922a18",
+    "title": "Fall Jazzfest, Concert 1",
+    "dates": [
+      "2026-11-22"
+    ],
+    "startTime": "16:00",
+    "endTime": "19:00",
+    "timeStatus": "confirmed",
+    "placeId": "music",
+    "placeText": "Schoenberg Hall",
+    "locationStatus": "confirmed",
+    "category": "arts",
+    "host": "UCLA Herb Alpert School of Music",
+    "description": "Student jazz ensembles led by faculty artists.",
+    "sourceUrls": [
+      "https://community.ucla.edu/event/40922a18-86b7-5eb6-bb15-5ecdb2a0190e",
+      "https://schoolofmusic.ucla.edu/events/"
+    ],
+    "sourceName": "UCLA Community calendar (community.ucla.edu)",
+    "status": "scheduled",
+    "conflicts": [],
+    "needsReview": false,
+    "lastCheckedAt": "2026-11-15"
+  }
+]
